@@ -1,42 +1,43 @@
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
-  return (
-    <footer className="bg-primary-900 text-white py-10">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold mb-2">HydroWallet</h2>
-            <p className="text-sm">Redefining Water Conservation</p>
-          </div>
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-            <p>Email: info@hydrowallet.com</p>
-            <p>Phone: +1 234 567 890</p>
-          </div>
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
-            <ul className="list-none">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400"><FaFacebook size={24} /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400"><FaTwitter size={24} /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400"><FaInstagram size={24} /></a>
+    return (
+        <footer className="bg-primary-900 text-white py-40 ">
+            <div className="w-10/12 m-auto flex gap-20 ">
+                <div className="w-2/5  space-y-5">
+                    <img src="/logo.png" alt="logo" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eos expedita ducimus, nisi error tempora voluptatum ut omnis quisquam veritatis, soluta iste ipsam magni nihil, in accusantium incidunt maiores provident!</p>
+                    <div className="flex gap-4 ">
+                        <FaFacebook className="text-white bg-blue-500 rounded-full p-2" size={30} />
+                        <FaTwitter className="text-white bg-blue-500 rounded-full p-2" size={30} />
+                        <FaYoutube className="text-white bg-blue-500 rounded-full p-2" size={30} />
+                        <FaLinkedin className="text-white bg-blue-500 rounded-full p-2" size={30} />
+                    </div>
+                </div>
+                <div className="flex flex-col gap-5 w-1/5">
+                    <h3 className="text-primary-500">Navigation </h3>
+                    <Link to="/" className="text-white hover:text-primary-500">Home</Link>
+                    <Link to="/products" className="text-white hover:text-primary-500">Produits</Link>
+                    <Link to="/projects" className="text-white hover:text-primary-500">Projets</Link>
+                    <Link to="/water-credit" className="text-white hover:text-primary-500">Water Credit</Link>
+                    <Link to="/about-us" className="text-white hover:text-primary-500">About Us</Link>
+                </div>
+                <div className="flex flex-col gap-5 w-1/5">
+                    <h3 className="text-primary-500">Navigation </h3>
+                    <Link to="/" className="text-white hover:text-primary-500">Home</Link>
+                    <Link to="/products" className="text-white hover:text-primary-500">Produits</Link>
+                    <Link to="/projects" className="text-white hover:text-primary-500">Projets</Link>
+                    <Link to="/water-credit" className="text-white hover:text-primary-500">Water Credit</Link>
+                    <Link to="/about-us" className="text-white hover:text-primary-500">About Us</Link>
+                </div>
+                <div className="flex flex-col gap-5 w-1/5">
+                    <h3 className="text-primary-500">Help</h3>
+                    <Link to="/faq" className="text-white hover:text-primary-500">FAQ</Link>
+                    <Link to="/contact-us" className="text-white hover:text-primary-500">Contact Us</Link>
+                </div>
             </div>
-          </div>
-        </div>
-        <div className="mt-10 text-center text-sm">
-          &copy; {new Date().getFullYear()} HydroWallet. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  );
+        </footer>
+    );
 };
 
 export default Footer;

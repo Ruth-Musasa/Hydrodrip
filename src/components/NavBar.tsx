@@ -13,9 +13,7 @@ export default function NavBar() {
     return (
         <div>
             <header className="flex justify-between items-center p-4 w-10/12 m-auto">
-                <div className="text-2xl font-bold">
-                    <img src="/logo.png" alt="logo" />
-                </div>
+                <img src="/logo.png" alt="logo" />
                 <div className="flex md:hidden">
                     <button onClick={toggleMenu}>
                         {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
