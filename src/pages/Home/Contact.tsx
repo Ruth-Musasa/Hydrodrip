@@ -4,7 +4,10 @@ import TitleWithUnderline from '../../components/titleWithUnderline';
 import SocialMedia from '../../components/socialMedia';
 import { FaMailBulk, FaPhone } from 'react-icons/fa';
 
-const Contact: React.FC = () => {
+interface Props{
+   bgColor?:string; 
+ }
+const Contact: React.FC<Props> = ({bgColor}) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -20,7 +23,7 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className='bg-gray-100 py-32'>
+        <div className={`${bgColor} py-32 `}>
             <TitleWithUnderline title="Contact Us" classe="items-center" />
             <div className="flex flex-col md:flex-row p-8 md:w-10/12 m-auto ">
                 <div className="w-2/3 p-4 space-y-6">
@@ -55,7 +58,7 @@ const Contact: React.FC = () => {
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className="border p-2 mt-1 w-full rounded bg-gray-100"
+                                className= {`border p-2 mt-1 w-full rounded ${bgColor} `} 
                                 required
                                 placeholder='Enter your name'
                             />
@@ -66,7 +69,7 @@ const Contact: React.FC = () => {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="border p-2 mt-1 w-full rounded bg-gray-100"
+                                className={` border p-2 mt-1 w-full rounded ${bgColor}  `} 
                                 placeholder='Enter your Email'
                                 required
                             />
@@ -76,7 +79,7 @@ const Contact: React.FC = () => {
                             <textarea
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className="border p-2 mt-1 w-full rounded bg-gray-100"
+                                className={`${bgColor} border p-2 mt-1 w-full rounded `} 
                                 rows={5}
                                 placeholder='Enter your message'
                                 required

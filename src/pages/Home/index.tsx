@@ -6,6 +6,7 @@ import IconTitleParagraph from "../../components/iconParagraph";
 import TitleWithUnderline from "../../components/titleWithUnderline";
 import DynamicNumber from "../AboutUs.tsx/dynamicNumber";
 import Contact from "./Contact";
+import Divider from "../../components/divider";
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
           <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Our projects</Btn>
         </div>
       </section>
-      <div className="border-t w-8/12 m-auto"></div>
+      <Divider />
       <section className="py-20 md:w-10/12 m-auto">
         <TitleWithUnderline title="Why choose our services" classe="items-center" />
         <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
@@ -119,7 +120,7 @@ export default function Home() {
         <DynamicNumber />
       </section>
       <UserTestimonials />
-      <Contact />
+      <Contact bgColor="bg-gray-100"/>
       <section className=" bg-cover bg-center py-20 bg-[url('src/assets/img/Rectangle 580.png')] " style={{ backgroundImage: `url(https:/encpted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZutnGq2nOq2bCccLG1PqB8HZ8Sk2rlZicSpAcZoc6iNaxsIA2)` }}>
         <div className="flex flex-col items-center text-center">
           <TitleWithUnderline title="Join millions of users today" classe="items-center md:w-2/12 m-auto text-center" />
