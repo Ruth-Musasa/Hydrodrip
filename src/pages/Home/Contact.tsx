@@ -23,13 +23,13 @@ const Contact: React.FC<Props> = ({bgColor}) => {
     };
 
     return (
-        <div className={`${bgColor} py-32 `}>
+        <div className={`${bgColor} py-20 md:py-32 `}>
             <TitleWithUnderline title="Contact Us" classe="items-center" />
-            <div className="flex flex-col md:flex-row p-8 md:w-10/12 m-auto ">
-                <div className="w-2/3 p-4 space-y-6">
+            <div className="flex flex-col md:flex-row md:p-8 md:w-10/12 m-auto ">
+                <div className="md:w-2/3 p-4 space-y-6">
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Let's Talk</h3>
-                        <p className='w-2/3'>Do you have an innovative idea or a bold water management project in mind? We’re here to help. Reach out to us – we would love to hear about your initiative and assist you in bringing it to life. Together, let’s drive forward the innovation in water management.</p>
+                        <p className='md:w-2/3'>Do you have an innovative idea or a bold water management project in mind? We’re here to help. Reach out to us – we would love to hear about your initiative and assist you in bringing it to life. Together, let’s drive forward the innovation in water management.</p>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>
@@ -50,7 +50,7 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                         <SocialMedia />
                     </div>
                 </div>
-                <div className="w-1/3 p-4">
+                <div className="md:w-1/3 p-4">
                     <form onSubmit={handleSubmit} className="flex flex-col">
                         <label className="mb-2">
                             Nom <span className='text-red-500'>*</span>
@@ -58,7 +58,7 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className= {`border p-2 mt-1 w-full rounded ${bgColor} `} 
+                                className= {`border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor} `} 
                                 required
                                 placeholder='Enter your name'
                             />
@@ -69,7 +69,7 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className={` border p-2 mt-1 w-full rounded ${bgColor}  `} 
+                                className={` border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor}  `} 
                                 placeholder='Enter your Email'
                                 required
                             />
@@ -79,7 +79,7 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                             <textarea
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className={`${bgColor} border p-2 mt-1 w-full rounded `} 
+                                className={`${bgColor} border border-zinc-500 p-2 mt-1 w-full rounded `} 
                                 rows={5}
                                 placeholder='Enter your message'
                                 required

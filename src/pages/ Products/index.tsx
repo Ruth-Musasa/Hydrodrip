@@ -16,7 +16,7 @@ export default function Product() {
                     title="Smart Water Meters"
                     btnAction="Read more"
                     icon={true}
-                    imageUrl="../src/assets/img/Rectangle 584.png"
+                    imageUrl="src/assets/img/Image.png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
@@ -45,7 +45,7 @@ export default function Product() {
                     title="Smart Water Meters"
                     btnAction="Read more"
                     icon={true}
-                    imageUrl="../src/assets/img/Rectangle 584.png"
+                    imageUrl="src/assets/img/Image (1).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
@@ -74,7 +74,7 @@ export default function Product() {
                     title="Smart Water Meters"
                     btnAction="Read more"
                     icon={true}
-                    imageUrl="../src/assets/img/Rectangle 584.png"
+                    imageUrl="src/assets/img/Image (2).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[

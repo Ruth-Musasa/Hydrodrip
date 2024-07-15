@@ -44,15 +44,15 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-gray-100 relative flex flex-col md:flex-row">
-        <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 md:w-5/12 rotate-180 invisible md:visible " />
-        <div className="m-auto p-8 text-center">
+        <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 md:w-4/12 2xl:w-1/2 rotate-180 invisible md:visible " />
+        <div className="m-auto py-8 text-center">
           <TitleWithUnderline title="Hear From Our Satisfied Users" classe="items-center" />
           <p className="mb-8 ">See HydroWallet in action. Watch our short documentary to see how we’re leading the revolution in water management, promoting sustainability and efficiency across diverse landscapes.</p>
           <div className="object-center">
             <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Watch video</Btn>
           </div>
         </div>
-        <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-5/12 " />
+        <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12 2xl:w-1/2 " />
       </section>
       <section className="py-16">
         <div className="w-11/12 md:w-10/12 m-auto text-center">
@@ -121,9 +121,9 @@ export default function Home() {
       </section>
       <UserTestimonials />
       <Contact bgColor="bg-gray-100"/>
-      <section className=" bg-cover bg-center py-20 bg-[url('src/assets/img/Rectangle 580.png')] " style={{ backgroundImage: `url(https:/encpted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZutnGq2nOq2bCccLG1PqB8HZ8Sk2rlZicSpAcZoc6iNaxsIA2)` }}>
+      <section className=" bg-cover bg-center py-40 bg-[url('src/assets/img/Rectangle 580.png')] " style={{ backgroundImage: `url(https:/encpted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZutnGq2nOq2bCccLG1PqB8HZ8Sk2rlZicSpAcZoc6iNaxsIA2)` }}>
         <div className="flex flex-col items-center text-center">
-          <TitleWithUnderline title="Join millions of users today" classe="items-center md:w-2/12 m-auto text-center" />
+          <TitleWithUnderline title="Some frequently asked questions asked" classe="items-center md:w-4/12  m-auto text-center" />
           <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Consult FAQs</Btn>
         </div>
       </section>
