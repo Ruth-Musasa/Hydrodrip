@@ -28,10 +28,11 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.clip-mountain': {
-          'clip-path': 'polygon(0 0, 100% 10%, 100% 30%,100% 90%, 0 100%)',
+          'clip-path': 'polygon(0 0, 100% 0,100% 95%, 0 100%)',
+          borderRadius: '0% 0% 90% 10% / 0% 0% 20% 2%',
         },
       });
-      
+
     },
   ],
 }

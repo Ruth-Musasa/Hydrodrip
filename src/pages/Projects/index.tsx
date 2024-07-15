@@ -1,5 +1,5 @@
 import NavBar from "../../components/NavBar";
-import Card from "../../components/card";
+import Card from "../ Products/card";
 
 export default function Projects() {
     return (
@@ -12,7 +12,7 @@ export default function Projects() {
             <section className="bg-white py-16">
                 <div className="w-11/12 md:w-10/12 m-auto">
                     <Card
-                        title="Titre1"
+                        title="University of Johannesburg Pilot"
                         btnAction="Read more"
                         icon={true}
                         imageUrl="../src/assets/img/Rectangle 584.png"

@@ -5,7 +5,7 @@ interface TitleWithCurveUnderlineProps {
   classe?: string;
 }
 
-const TitleWithCurveUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title, classe }) => {
+const TitleWithUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title, classe }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const [width, setWidth] = useState(0);
 
@@ -36,4 +36,4 @@ const TitleWithCurveUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title
   );
 };
 
-export default TitleWithCurveUnderline;
+export default TitleWithUnderline;

@@ -1,34 +1,34 @@
 import NavBar from "../../components/NavBar";
-import Card from "../../components/card";
+import Card from "./card";
 
 export default function Product() {
     return (
         <div>
             <NavBar />
             <div className="text-white text-center  bg-custom-gradient py-60 m-auto space-y-6 clip-mountain">
-                <h1 className="text-5xl font-bold m-auto ">Our Impactful Projects</h1>
-                <p className="font-semibold m-auto text-lg ">Driving sustainable water management through innovative projects</p>
+                <h1 className="text-5xl font-bold m-auto ">Our Innovative Products</h1>
+                <p className="font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
             </div>
             <section className="bg-white py-16">
-                <div className="w-11/12 md:w-10/12 m-auto">
+                <div className="w-11/12  m-auto">
                     <Card
-                        title="Titre1"
+                        title="Smart Water Meters"
                         btnAction="Read more"
                         icon={true}
                         imageUrl="../src/assets/img/Rectangle 584.png"
+                        descriptionTitle="Description"
+                        description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                         sections={[
                             {
                                 title: "Section 1",
                                 paragraphs: [
                                     "Premier paragraphe de la section 1.",
-                                    "Deuxième paragraphe de la section 1.",
                                 ]
                             },
                             {
                                 title: "Section 2",
                                 paragraphs: [
                                     "Premier paragraphe de la section 2.",
-                                    "Deuxième paragraphe de la section 2.",
                                 ]
                             }
                         ]}
