@@ -1,19 +1,20 @@
 import { FaArrowRight } from "react-icons/fa";
 import Btn from "../../components/Button";
 import NavBar from "../../components/NavBar";
-import Card from "../../components/card";
-import Testimonial from "../../components/testimony";
+import UserTestimonials from "./userTestimonial";
+import GroupIconParagraph from "./GroupIconParagraph";
+import IconTitleParagraph from "../../components/iconParagraph";
 
 export default function Home() {
   return (
     <div>
       <section>
-        <div className="bg-primary-100">
+        <div className="bg-primary-100 clip-mountain">
           <div className="relative">
             <NavBar />
             <img src="src/assets/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0" alt="" />
-            <div className="w-11/12 md:w-10/12 m-auto space-y-10 py-40">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl text-primary-900 font-bold">Redefining Water Conservation with HydroWallet</h1>
+            <div className="w-11/12 md:w-10/12 m-auto space-y-10 py-44">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-primary-900 font-bold w-2/3">Redefining Water Conservation with HydroWallet</h1>
               <p className="w-full md:w-2/3">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
               <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn>
             </div>
@@ -24,7 +25,7 @@ export default function Home() {
       <section className="py-16">
         <div className="w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-8 md:gap-20">
           <img src="../src/assets/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
-          <div className="m-auto space-y-10">
+          <div className="m-auto space-y-10 w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900">Who are you</h2>
             <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
             <p className="border-l-4 border-primary-500 pl-4 font-bold">Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.</p>
@@ -39,52 +40,50 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 relative flex flex-col md:flex-row py-16">
+      <section className="invisible md:visible bg-gray-100 relative flex flex-col md:flex-row">
         <img src="src/assets/img/Rectangle 588.png" alt="" className="w-full md:w-1/2 rotate-180" />
         <div className="m-auto p-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900">Hear From Our Satisfied Users</h2>
-          <p className="mb-8">See HydroWallet in action. Watch our short documentary to see how we’re leading the revolution in water management, promoting sustainability and efficiency across diverse landscapes.</p>
-          <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Watch video</Btn>
+          <p className="mb-8 ">See HydroWallet in action. Watch our short documentary to see how we’re leading the revolution in water management, promoting sustainability and efficiency across diverse landscapes.</p>
+          <div className="object-center">
+            <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Watch video</Btn>
+          </div>
         </div>
-        <img src="src/assets/img/Rectangle 588.png" alt="" className="w-full md:w-1/2" />
+        <img src="src/assets/img/Rectangle 588.png" alt="" className="invisible md:visible  w-full md:w-1/2" />
       </section>
-      <section className="bg-gray-100 py-16">
+      <section className="py-16">
         <div className="w-11/12 md:w-10/12 m-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900">Hear From Our Satisfied Users</h2>
-          <p className="w-full md:w-2/3 m-auto mb-8">See HydroWallet in action. Watch our short documentary to see how we’re leading the revolution in water management, promoting sustainability and efficiency across diverse landscapes.</p>
-          <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Watch video</Btn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900">Serving Our Customers</h2>
+          <p className="w-full md:w-5/12 m-auto mb-8">Explore our project portfolio to see the tangible impacts of HydroWallet in enhancing water conservation efforts globally. From small communities to large industries, see how our solutions are making a difference.</p>
+          <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Our projects</Btn>
         </div>
       </section>
-      <section className="bg-white py-16">
-        <div className="w-11/12 md:w-10/12 m-auto">
-          <Card
-            title="Titre1"
-            btnAction="Read more"
-            icon={true}
-            imageUrl="../src/assets/img/Rectangle 584.png"
-            sections={[
-              {
-                title: "Section 1",
-                paragraphs: [
-                  "Premier paragraphe de la section 1.",
-                  "Deuxième paragraphe de la section 1.",
-                ]
-              },
-              {
-                title: "Section 2",
-                paragraphs: [
-                  "Premier paragraphe de la section 2.",
-                  "Deuxième paragraphe de la section 2.",
-                ]
-              }
-            ]}
+      <div className="border-t w-8/12 m-auto"></div>
+      <section className="py-20 ">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900 text-center">Why choose our services</h2>
+        <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
+        <div className="flex flex-col md:flex-row justify-center md:space-x-4 m-auto">
+          <IconTitleParagraph
+            image="src/assets/img/Icon 1 (1).png"
+            title="Step 1"
+            description="Ceci est la description pour l'étape 1."
+          />
+          <IconTitleParagraph
+            image="src/assets/img/Icon 1 (1).png"
+            title="Step 1"
+            description="Ceci est la description pour l'étape 1."
+          />
+          <IconTitleParagraph
+            image="src/assets/img/Icon 1 (1).png"
+            title="Step 1"
+            description="Ceci est la description pour l'étape 1."
           />
         </div>
       </section>
-      <section className="py-16">
+      <section className="py-16 bg-primary-100">
         <div className="w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-8 md:gap-20">
           <img src="../src/assets/img/Images.png" className="w-full md:w-1/2" alt="" />
-          <div className="m-auto space-y-10">
+          <div className="m-auto space-y-10 w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-900">Who are you</h2>
             <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
             <div className="flex">
@@ -98,29 +97,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-40 w-11/12 md:w-10/12 m-auto space-y-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary-900">Hear From Our Satisfied Users</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Testimonial
-            imageUrl="src/assets/img/photo1.png"
-            name="Dr. Simon Bridgewater"
-            position="Vice Chancellor, University of Johannesburg"
-            message="As a university administrator, watching our campus become a leader in sustainability through HydroWallet has been incredibly rewarding."
-          />
-          <Testimonial
-            imageUrl="src/assets/img/photo1.png"
-            name="Jane Smith"
-            position="Marketing Manager"
-            message="J'ai eu une expérience merveilleuse. Je recommande vivement ce service à tout le monde."
-          />
-          <Testimonial
-            imageUrl="src/assets/img/photo1.png"
-            name="Alice Johnson"
-            position="Product Manager"
-            message="Le service est très professionnel et les résultats sont au rendez-vous. Merci beaucoup !"
-          />
-        </div>
-      </section>
+      <UserTestimonials />
     </div>
   )
 }

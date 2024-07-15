@@ -8,9 +8,10 @@ type BtnProps = {
     State: 'Default' | 'Disabled';
     icon: boolean
     children: React.ReactNode;
+    classe?:string;
 };
 
-const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon  }) => {
+const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon ,classe }) => {
     const baseStyles = 'flex items-center justify-center rounded transition duration-300';
 
     const sizeStyles = {
@@ -36,7 +37,7 @@ const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon  })
 
     return (
         <button
-            className={`${baseStyles} ${sizeStyles[Size]} ${styleStyles[Style]} ${colorStyles[Color]} ${stateStyles[State]} `}
+            className={`${classe} ${baseStyles} ${sizeStyles[Size]} ${styleStyles[Style]} ${colorStyles[Color]} ${stateStyles[State]} `}
             disabled={State === 'Disabled'}
         >
             {children}
