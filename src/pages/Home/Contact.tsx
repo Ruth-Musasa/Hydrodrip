@@ -4,26 +4,35 @@ import TitleWithUnderline from '../../components/titleWithUnderline';
 import SocialMedia from '../../components/socialMedia';
 import { FaMailBulk, FaPhone } from 'react-icons/fa';
 
-interface Props{
-   bgColor?:string; 
- }
-const Contact: React.FC<Props> = ({bgColor}) => {
+interface Props {
+    bgColor?: string;
+}
+
+const Contact: React.FC<Props> = ({ bgColor }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [submitted, setSubmitted] = useState(false);
+    const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (name && email && message) {
-            setSubmitted(true);
+        let validationErrors: { name?: string; email?: string; message?: string } = {};
+
+        if (!name) validationErrors.name = 'Veuillez remplir ce champ.';
+        if (!email) validationErrors.email = 'Veuillez remplir ce champ.';
+        if (!message) validationErrors.message = 'Veuillez remplir ce champ.';
+
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
         } else {
-            alert('Veuillez remplir tous les champs.');
+            setErrors({});
+            setSubmitted(true);
         }
     };
 
     return (
-        <div className={`${bgColor} py-20 md:py-32 `}>
+        <div className={`${bgColor} py-20 md:py-32`}>
             <TitleWithUnderline title="Contact Us" classe="items-center" />
             <div className="flex flex-col md:flex-row md:p-8 md:w-10/12 m-auto ">
                 <div className="md:w-2/3 p-4 space-y-6">
@@ -58,10 +67,11 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className= {`border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor} `} 
+                                className={`border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor}`}
                                 required
                                 placeholder='Enter your name'
                             />
+                            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
                         </label>
                         <label className="mb-2">
                             Email <span className='text-red-500'>*</span>
@@ -69,21 +79,23 @@ const Contact: React.FC<Props> = ({bgColor}) => {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className={` border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor}  `} 
+                                className={`border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor}`}
                                 placeholder='Enter your Email'
                                 required
                             />
+                            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                         </label>
                         <label className="mb-2">
                             Message <span className='text-red-500'>*</span>
                             <textarea
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className={`${bgColor} border border-zinc-500 p-2 mt-1 w-full rounded `} 
+                                className={`border border-zinc-500 p-2 mt-1 w-full rounded ${bgColor}`}
                                 rows={5}
                                 placeholder='Enter your message'
                                 required
                             ></textarea>
+                            {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                         </label>
                         <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Send</Btn>
                     </form>
@@ -95,3 +107,4 @@ const Contact: React.FC<Props> = ({bgColor}) => {
 };
 
 export default Contact;
+

@@ -28,7 +28,7 @@ const Card: React.FC<Props> = ({ imageUrl, sections, icon, title, btnAction, des
                 <div className="w-full md:w-1/2 md:pl-8 space-y-2">
                     <h3 className='text-primary-900 text-2xl font-bold'>{descriptionTitle} </h3>
                     <p>{description} </p>
-                    <h3 className='text-primary-900 text-2xl font-bold'>{descriptionTitle} </h3>
+                    <h3 className='text-primary-900 text-2xl font-bold pt-6'>Features </h3>
                     <ParagraphDescription sections={sections} icon={icon} />
                     <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>{btnAction}</Btn>
                 </div>

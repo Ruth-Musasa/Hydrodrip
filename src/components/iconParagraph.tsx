@@ -36,8 +36,8 @@ const IconTitleParagraph: React.FC<IconTitleParagraphProps> = ({
     image,
     title,
     description,
-    iconColor = 'text-blue-500',
-    bgColor = 'bg-blue-500 bg-opacity-20'
+    iconColor = 'text-primary-500',
+    bgColor = 'bg-primary-500 bg-opacity-20'
 }) => {
     return (
         <div className="flex flex-col items-center justify-center text-center p-6">
