@@ -17,7 +17,7 @@ interface Props {
     btnAction: string;
 }
 
-const Card: React.FC<Props> = ({ imageUrl, sections, icon, title, btnAction, descriptionTitle, description }) => {
+const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descriptionTitle, description }) => {
     return (
         <div className='py-14'>
             <TitleWithUnderline title={`${title} `} classe="items-center" />
@@ -29,7 +29,7 @@ const Card: React.FC<Props> = ({ imageUrl, sections, icon, title, btnAction, des
                     <h3 className='text-primary-900 text-2xl font-bold'>{descriptionTitle} </h3>
                     <p>{description} </p>
                     <h3 className='text-primary-900 text-2xl font-bold pt-6'>Features </h3>
-                    <ParagraphDescription sections={sections} icon={icon} />
+                    <ParagraphDescription sections={sections}  />
                     <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>{btnAction}</Btn>
                 </div>
             </div>

@@ -4,22 +4,23 @@ interface Props {
     sections: {
         title: string;
         paragraphs: string[];
+        icon?: boolean;
+        img?: string;
     }[];
-    icon?: boolean;
-    img?: string;
+   
 }
 
-const ParagraphDescription: React.FC<Props> = ({ sections, icon, img }) => {
+const ParagraphDescription: React.FC<Props> = ({ sections}) => {
     return (
         <div>
             {
                 sections.map((section, index) => (
                     <div key={index}>
                         <div className="mb-2 flex items-center gap-10">
-                            {icon ? <FaArrowRight className="inline mr-2 text-primary-300" /> : null}
-                            {img ? <img src={img} alt="image icon" /> : null}
+                            {section.icon ? <FaArrowRight className="inline mr-2 text-primary-300" /> : null}
+                            {section.img ? <img src={section.img} alt="image icon" className='w-16 items-center' /> : null}
                             {section.paragraphs.map((paragraph, pIndex) => (
-                                <p key={pIndex} className="text-gray-700 mb-2">
+                                <p key={pIndex} className="text-gray-700 mb-4">
                                     <h2 className="font-bold ">{section.title}</h2>
                                     {paragraph}
                                 </p>
