@@ -14,10 +14,10 @@ export default function Home() {
     <div>
       <div>
         <div className="bg-primary-100 clip-mountain">
-          <div className="relative">
-            <NavBar />
+          <div className="relative ">
+            <NavBar  />
             <img src="src/assets/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0" alt="" />
-            <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4 lg:pb-48 lg:pt-36">
+            <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4 lg:pb-48 lg:pt-36 relative z-10">
               <h1 className="text-3xl md:text-4xl lg:text-5xl text-primary-900 font-bold lg:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
               <p className="w-full md:w-6/12">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
               <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn>

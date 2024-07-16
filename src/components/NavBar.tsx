@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Btn from './Button';
 
+
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,7 @@ export default function NavBar() {
     };
 
     return (
-        <div>
+        <div className="relative z-10">
             <header className="flex justify-between items-center p-4 w-10/12 m-auto">
                 <img src="/logo.png" alt="logo" />
                 <div className="flex md:hidden">
