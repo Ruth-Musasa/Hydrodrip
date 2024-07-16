@@ -115,10 +115,7 @@ export default function Home() {
           <h3 className="text-center text-primary-500 font-bold text-3xl">Ready to Take Control of Your Water Usage?</h3>
           <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn>
         </div>
-        <div className="bg-primary-800 py-28 space-y-10 md:space-y-20">
-          <h2 className="text-3xl md:text-4xl font-bold  text-white text-center">Hydrodrip in numbers</h2>
-          <DynamicNumber />
-        </div>
+        <DynamicNumber />
         <UserTestimonials />
         <Contact bgColor="bg-gray-100" />
         <FAQs />

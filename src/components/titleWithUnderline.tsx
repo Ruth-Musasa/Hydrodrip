@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 interface TitleWithCurveUnderlineProps {
-  title: string;
+  title?: string;
   classe?: string;
 }
 

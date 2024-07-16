@@ -34,11 +34,15 @@ const DynamicNumber: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-wrap justify-center md:gap-8 p-8">
-            {stats.map((stat, index) => (
-                <Stat key={index} title={stat.title} value={stat.value} suffix={stat.suffix} />
-            ))}
+        <div className="bg-primary-800 py-28 space-y-10 md:space-y-20">
+            <h2 className="text-3xl md:text-4xl font-bold  text-white text-center">Hydrodrip in numbers</h2>
+            <div className="flex flex-wrap justify-center md:gap-8 p-8">
+                {stats.map((stat, index) => (
+                    <Stat key={index} title={stat.title} value={stat.value} suffix={stat.suffix} />
+                ))}
+            </div>
         </div>
+
     );
 };
 

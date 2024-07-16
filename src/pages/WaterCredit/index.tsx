@@ -13,9 +13,14 @@ export default function WaterCredit() {
         <section>
             <div>
                 <NavBar />
-                <div className="text-white text-center  bg-custom-gradient py-60 m-auto space-y-6 clip-mountain">
-                    <h1 className="text-5xl font-bold m-auto ">Our Impactful Projects</h1>
-                    <p className="font-semibold m-auto text-lg ">Driving sustainable water management through innovative projects</p>
+                <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
+                    <div className="w-10/12 md:flex m-auto py-10 gap-20">
+                        <div className="text-white md:w-1/2 m-auto space-y-10">
+                            <h1 className="text-5xl font-bold m-auto ">Optimize Your Water Usage with <span className="text-secondary-300"> Smart Water Meters</span> </h1>
+                            <p className="font-semibold m-auto text-lg ">Empowering you with real-time monitoring and complete control over your water consumption.                    </p>
+                        </div>
+                        <img src="src/assets/img/2-removebg 2.png" alt="" />
+                    </div>
                 </div>
             </div>
             <section >
