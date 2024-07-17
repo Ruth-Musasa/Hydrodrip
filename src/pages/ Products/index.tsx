@@ -15,6 +15,7 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
+                    to="/smart-water-metter"
                     imageUrl="src/assets/img/Image.png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."

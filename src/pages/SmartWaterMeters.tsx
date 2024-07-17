@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Btn from "../components/Button";
 import NavBar from "../components/NavBar";
 import IconTitleParagraph from "../components/iconParagraph";
@@ -8,7 +9,7 @@ import Contact from "./Home/Contact";
 import UserTestimonials from "./Home/userTestimonial";
 
 
-export default function WaterCredit() {
+export default function SmartWaterMetter() {
     return (
         <section>
             <div>
@@ -35,21 +36,21 @@ export default function WaterCredit() {
                                 sections={[
                                     {
                                         title: "Real-Time Monitoring",
-                                        img:"src/assets/img/List.png",
+                                        img: "src/assets/img/List.png",
                                         paragraphs: [
                                             "Track water usage dynamically to detect leaks and patterns, ensuring optimal water management.",
                                         ]
                                     },
                                     {
                                         title: "Accurate Data",
-                                        img:"src/assets/img/List.png",
+                                        img: "src/assets/img/List.png",
                                         paragraphs: [
                                             "Receive data you can trust with our high-precision meters that ensure billing accuracy and water usage transparency.",
                                         ]
                                     },
                                     {
                                         title: "Alerts and Notifications",
-                                        img:"src/assets/img/List.png",
+                                        img: "src/assets/img/List.png",
                                         paragraphs: [
                                             "Stay informed with instant alerts on leaks, potential over-usage, or system malfunctions to promptly address any issues.",
                                         ]
@@ -92,7 +93,7 @@ export default function WaterCredit() {
                         <img src="src/assets/img/Group 33578.png" alt="" />
                         <div className="m-auto w-3/4">
                             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white text-center">Trust our quality technicians buy now a Smart Water Meters            </h2>
-                            <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn>
+                            <Link to="/contact-us" ><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
                         </div>
                     </div>
                 </div>

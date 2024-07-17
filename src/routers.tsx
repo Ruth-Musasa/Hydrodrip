@@ -3,6 +3,7 @@ import AboutUs from "./pages/AboutUs.tsx";
 import FAQs from "./pages/FAQs.tsx";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import SmartWaterMetter from "./pages/SmartWaterMeters.tsx";
 import WaterCredit from "./pages/WaterCredit";
 import ContactUs from "./pages/contactUs /index.tsx";
 
@@ -38,6 +39,14 @@ export const navigations: Router[] = [
   {
     path: "/contact-us",
     element: <ContactUs />,
+  },
+  {
+    path: "/faqs",
+    element: <FAQs/>,
+  },
+  {
+    path: "/smart-water-metter",
+    element: <SmartWaterMetter/>,
   },
   {
     path: "/faqs",

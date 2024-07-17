@@ -3,6 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import Btn from '../../components/Button';
 import TitleWithUnderline from '../../components/titleWithUnderline';
 import ParagraphDescription from '../../components/paragraphDescription';
+import { Link } from 'react-router-dom';
 
 interface Props {
     title: string;
@@ -15,9 +16,10 @@ interface Props {
         paragraphs: string[];
     }[];
     btnAction: string;
+    to: string;
 }
 
-const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descriptionTitle, description }) => {
+const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descriptionTitle, description, to }) => {
     return (
         <div className='py-14'>
             <TitleWithUnderline title={`${title} `} classe="items-center" />
@@ -29,8 +31,8 @@ const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descripti
                     <h3 className='text-primary-900 text-2xl font-bold'>{descriptionTitle} </h3>
                     <p>{description} </p>
                     <h3 className='text-primary-900 text-2xl font-bold pt-6'>Features </h3>
-                    <ParagraphDescription sections={sections}  />
-                    <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>{btnAction}</Btn>
+                    <ParagraphDescription sections={sections} />
+                    <Link to={to}>   <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>{btnAction}</Btn></Link>
                 </div>
             </div>
         </div>

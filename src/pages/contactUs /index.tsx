@@ -5,6 +5,7 @@ import CardPhoto from "../AboutUs.tsx/cardPhoto";
 import Form from "./form";
 import Divider from "../../components/divider";
 import MapSection from "./map";
+import { MdPlace } from "react-icons/md";
 
 export default function ContactUs() {
     return (
@@ -23,11 +24,11 @@ export default function ContactUs() {
             </div>
             <CardPhoto img="src/assets/img/Rectangle 589.png">
                 <TitleWithUnderline title="Our contact details" classe="items-start" />
-                <div className="md:w-2/3 p-4 space-y-6">
+                <div className="md:w-2/3 p-4 space-y-10">
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Address</h3>
                         <div className='flex gap-2'>
-                            <FaMailBulk className="text-primary-400" size={20} />
+                            <MdPlace className="text-primary-400" size={20} />
                             <span className='text-primary-900 font-bold hidden md:block'>1010 Avenue Jouhanesbourg, RSA.</span>
                         </div>
                     </div>
