@@ -16,8 +16,8 @@ const TitleWithUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title, cla
   }, [title]);
 
   return (
-    <div className={`relative flex flex-col ${classe}  mb-10 `}>
-      <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold mb-4 text-primary-900">{title}</h2>
+    <div className={`relative flex flex-col text-primary-900 ${classe}  mb-10 `}>
+      <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold mb-4 ">{title}</h2>
       <svg width={width} height="20" viewBox={`0 0 ${width} 20`} className="absolute bottom-0">
         <path
           d={`M0 18 Q ${width / 2} 0 ${width} 10`}

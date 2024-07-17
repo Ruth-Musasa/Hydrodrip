@@ -20,6 +20,15 @@ export default function AboutUs() {
                 </div>
             </section>
             <section>
+                <div className="flex w-10/12 m-auto gap-40 pb-20">
+                    <img src="src/assets/img/Images8.png" alt="" />
+                    <div className="m-auto">
+                        <TitleWithUnderline title="Hydrodrip: Pioneering Water Management Since 2023" classe="items-start" />
+                        <p className="mb-10">Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency.</p>
+                        <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Learn more</Btn>
+                    </div>
+                </div>
+                <Divider />
                 <CardWithIcon img="src/assets/img/Image6.png">
                     <TitleWithUnderline title="Our mission" classe="items-start" />
                     <p className="mb-12"> Our smart water meters and HydroWallet app make water usage tracking and payments as seamless as possible, facilitating a hassle-free experience for all users.</p>

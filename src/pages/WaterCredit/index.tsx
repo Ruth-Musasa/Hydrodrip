@@ -117,7 +117,7 @@ export default function WaterCredit() {
                                 },
                             ]}
                         />
-                        <Link to="/projects">  <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} >Join now</Btn></Link>
+                        <Link to="/contact-us">  <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} >Join now</Btn></Link>
                     </CardWithIcon>
                 </div>
                 <UserTestimonials />

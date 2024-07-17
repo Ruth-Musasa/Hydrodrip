@@ -47,6 +47,7 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
+                    to="/hydrowallet"
                     imageUrl="src/assets/img/Image (1).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
@@ -78,6 +79,7 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
+                    to="/water-credit"
                     imageUrl="src/assets/img/Image (2).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
