@@ -15,25 +15,27 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
-                    icon={true}
                     imageUrl="src/assets/img/Image.png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
                         {
                             title: "Section 1",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 1.",
                             ]
                         },
                         {
                             title: "Section 2",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 2.",
                             ]
                         },
                         {
                             title: "Section 2",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 2.",
                             ]
@@ -44,25 +46,27 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
-                    icon={true}
                     imageUrl="src/assets/img/Image (1).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
                         {
                             title: "Section 1",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 1.",
                             ]
                         },
                         {
                             title: "Section 2",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 2.",
                             ]
                         },
                         {
                             title: "Section 2",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 2.",
                             ]
@@ -73,19 +77,20 @@ export default function Product() {
                 <Card
                     title="Smart Water Meters"
                     btnAction="Read more"
-                    icon={true}
                     imageUrl="src/assets/img/Image (2).png"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
                         {
                             title: "Section 1",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 1.",
                             ]
                         },
                         {
                             title: "Section 2",
+                            icon:true,
                             paragraphs: [
                                 "Premier paragraphe de la section 2.",
                             ]

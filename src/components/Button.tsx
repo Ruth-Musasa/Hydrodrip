@@ -12,7 +12,7 @@ type BtnProps = {
 };
 
 const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon ,classe }) => {
-    const baseStyles = 'flex items-center justify-center rounded transition duration-300';
+    const baseStyles = 'flex items-center justify-center rounded transition duration-300 font-bold';
 
     const sizeStyles = {
         small: 'px-2 py-1 text-sm',

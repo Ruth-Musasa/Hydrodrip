@@ -3,6 +3,7 @@ import AboutUs from "./pages/AboutUs.tsx";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import WaterCredit from "./pages/WaterCredit";
+import ContactUs from "./pages/contactUs /index.tsx";
 
 
 
@@ -33,10 +34,10 @@ export const navigations: Router[] = [
     path: "/about-us",
     element:<AboutUs/> ,
   },
-  // {
-  //   path: "/contacts",
-  //   element:<Contacts/> ,
-  // },
+  {
+    path: "/contact-us",
+    element:<ContactUs/> ,
+  },
 
 ];
 

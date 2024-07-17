@@ -8,6 +8,7 @@ import DynamicNumber from "../AboutUs.tsx/dynamicNumber";
 import Contact from "./Contact";
 import Divider from "../../components/divider";
 import FAQs from "./faqs";
+import ParagraphDescription from "../../components/paragraphDescription";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <div>
         <div className="bg-primary-100 clip-mountain">
           <div className="relative ">
-            <NavBar  />
+            <NavBar />
             <img src="src/assets/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0" alt="" />
             <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4 lg:pb-48 lg:pt-36 relative z-10">
               <h1 className="text-3xl md:text-4xl lg:text-5xl text-primary-900 font-bold lg:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
@@ -54,7 +55,7 @@ export default function Home() {
           </div>
           <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12 2xl:w-1/2 " />
         </div>
-        <div className="py-16">
+        <div className="py-32">
           <div className="w-11/12 md:w-10/12 m-auto text-center">
             <TitleWithUnderline title="Serving Our Customers" classe="items-center" />
             <p className="w-full md:w-5/12 m-auto mb-8">Explore our project portfolio to see the tangible impacts of HydroWallet in enhancing water conservation efforts globally. From small communities to large industries, see how our solutions are making a difference.</p>
@@ -89,14 +90,20 @@ export default function Home() {
             <div className="m-auto space-y-10 w-full md:w-1/2">
               <TitleWithUnderline title="Water credit" classe="items-start" />
               <p>At HydroDrip, we are pioneers in the field of water management, dedicated to delivering innovative solutions that ensure efficient water use and conservation. Our mission is to empower communities and industries with advanced technologies that promote sustainable water practices and secure water resources for future generations</p>
-              <div className="flex">
-                <FaArrowRight className="inline mr-2 items-center" />
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-              <div className="flex">
-                <FaArrowRight className="inline mr-2 items-center" />
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
+              <ParagraphDescription
+                sections={[
+                  {
+                    title: "Section 1",
+                    icon: true,
+                    paragraphs: ["Premier paragraphe de la section 1.",]
+                  },
+                  {
+                    title: "Section 2",
+                    icon: true,
+                    paragraphs: ["Premier paragraphe de la section 2."]
+                  },
+                ]}
+              />
               <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn>
             </div>
           </div>

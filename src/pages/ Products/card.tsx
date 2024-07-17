@@ -11,9 +11,9 @@ interface Props {
     descriptionTitle?: string;
     sections: {
         title: string;
+        icon: boolean;
         paragraphs: string[];
     }[];
-    icon: boolean;
     btnAction: string;
 }
 

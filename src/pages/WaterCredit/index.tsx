@@ -14,7 +14,7 @@ export default function WaterCredit() {
             <div>
                 <NavBar />
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
-                    <div className="w-10/12 md:flex m-auto py-10 gap-20">
+                    <div className="w-10/12 md:flex m-auto py-20 gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
                             <h1 className="text-5xl font-bold m-auto ">Optimize Your Water Usage with <span className="text-secondary-300"> Smart Water Meters</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Empowering you with real-time monitoring and complete control over your water consumption.                    </p>
@@ -32,22 +32,24 @@ export default function WaterCredit() {
                         <div>
                             <TitleWithUnderline title="Key Features" classe="items-start" />
                             <ParagraphDescription
-                                img="src/assets/img/List.png"
                                 sections={[
                                     {
                                         title: "Real-Time Monitoring",
+                                        img:"src/assets/img/List.png",
                                         paragraphs: [
                                             "Track water usage dynamically to detect leaks and patterns, ensuring optimal water management.",
                                         ]
                                     },
                                     {
                                         title: "Accurate Data",
+                                        img:"src/assets/img/List.png",
                                         paragraphs: [
                                             "Receive data you can trust with our high-precision meters that ensure billing accuracy and water usage transparency.",
                                         ]
                                     },
                                     {
                                         title: "Alerts and Notifications",
+                                        img:"src/assets/img/List.png",
                                         paragraphs: [
                                             "Stay informed with instant alerts on leaks, potential over-usage, or system malfunctions to promptly address any issues.",
                                         ]

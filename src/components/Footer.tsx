@@ -18,24 +18,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 md:w-3/5">
-          <div className="flex flex-col gap-5 md:w-1/3">
-            <h3 className="text-primary-500">Navigation</h3>
+          <div className="flex flex-col gap-5 md:w-1/3 ">
+            <h3 className="text-primary-500 font-bold">Navigation</h3>
             <Link to="/" className="text-white hover:text-primary-500">Home</Link>
             <Link to="/products" className="text-white hover:text-primary-500">Produits</Link>
             <Link to="/projects" className="text-white hover:text-primary-500">Projets</Link>
             <Link to="/water-credit" className="text-white hover:text-primary-500">Water Credit</Link>
             <Link to="/about-us" className="text-white hover:text-primary-500">About Us</Link>
           </div>
-          <div className="flex flex-col gap-5 md:w-1/3">
-            <h3 className="text-primary-500">Navigation</h3>
+          <div className="flex flex-col gap-5 md:w-1/3 ">
+            <h3 className="text-primary-500 font-bold">Featured Locations</h3>
             <Link to="/" className="text-white hover:text-primary-500">Home</Link>
             <Link to="/products" className="text-white hover:text-primary-500">Produits</Link>
             <Link to="/projects" className="text-white hover:text-primary-500">Projets</Link>
             <Link to="/water-credit" className="text-white hover:text-primary-500">Water Credit</Link>
             <Link to="/about-us" className="text-white hover:text-primary-500">About Us</Link>
           </div>
-          <div className="flex flex-col gap-5 md:w-1/3">
-            <h3 className="text-primary-500">Help</h3>
+          <div className="flex flex-col gap-5 md:w-1/3 ">
+            <h3 className="text-primary-500 font-bold">Help</h3>
             <Link to="/faq" className="text-white hover:text-primary-500">FAQ</Link>
             <Link to="/contact-us" className="text-white hover:text-primary-500">Contact Us</Link>
           </div>

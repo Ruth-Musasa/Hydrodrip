@@ -13,7 +13,7 @@ export default function NavBar() {
 
     return (
         <div className="relative z-10">
-            <header className="flex justify-between items-center p-4 w-10/12 m-auto">
+            <header className="flex justify-between items-center w-10/12 m-auto">
                 <img src="/logo.png" alt="logo" />
                 <div className="flex md:hidden">
                     <button onClick={toggleMenu}>
