@@ -1,5 +1,6 @@
 import Product from "./pages/ Products";
 import AboutUs from "./pages/AboutUs.tsx";
+import FAQs from "./pages/FAQs.tsx";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import WaterCredit from "./pages/WaterCredit";
@@ -16,29 +17,32 @@ interface Router {
 export const navigations: Router[] = [
   {
     path: "/",
-    element:<Home/> ,
+    element: <Home />,
   },
   {
     path: "/products",
-    element:<Product/> ,
+    element: <Product />,
   },
   {
     path: "/projects",
-    element:<Projects/> ,
+    element: <Projects />,
   },
   {
     path: "/water-credit",
-    element:<WaterCredit/> ,
+    element: <WaterCredit />,
   },
   {
     path: "/about-us",
-    element:<AboutUs/> ,
+    element: <AboutUs />,
   },
   {
     path: "/contact-us",
-    element:<ContactUs/> ,
+    element: <ContactUs />,
   },
-
+  {
+    path: "/faqs",
+    element: <FAQs/>,
+  },
 ];
 
 

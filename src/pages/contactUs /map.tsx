@@ -1,47 +1,26 @@
-import React, { useEffect, useRef } from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
-const containerStyle = {
-    width: '100%',
-    height: '400px'
-};
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const center = {
-    lat: -3.745, // Remplacez par la latitude de l'adresse souhaitée
-    lng: -38.523 // Remplacez par la longitude de l'adresse souhaitée
+  lat: -11.6869,
+  lng: 27.4857,
 };
 
-const MapSection: React.FC = () => {
-    const mapRef = useRef<google.maps.Map | null>(null);
-    const markerRef = useRef<google.maps.marker.AdvancedMarkerElement | null>(null);
+function Map() {
+  return (
+    <MapContainer center={center} zoom={15} style={{ width: '100%', height: '800px' }}>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={center}>
+        <Popup>
+          Avenue Fatuma, Lubumbashi <br /> (9F52+WRQ)
+        </Popup>
+      </Marker>
+    </MapContainer>
+  );
+}
 
-    useEffect(() => {
-        if (mapRef.current) {
-            const marker = new google.maps.marker.AdvancedMarkerElement({
-                position: center,
-                map: mapRef.current,
-                title: 'Your Location',
-            });
-            markerRef.current = marker;
-        }
-    }, [mapRef.current]);
-
-    return (
-        <div className="w-full h-auto py-16 bg-gray-100">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Location</h2>
-            <div className="w-11/12 md:w-10/12 m-auto">
-                <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                    <GoogleMap
-                        mapContainerStyle={containerStyle}
-                        center={center}
-                        zoom={15}
-                        onLoad={map => (mapRef.current = map)}
-                    >
-                    </GoogleMap>
-                </LoadScript>
-            </div>
-        </div>
-    );
-};
-
-export default MapSection;
+export default React.memo(Map);

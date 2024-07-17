@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-5 md:w-1/3 ">
             <h3 className="text-primary-500 font-bold">Help</h3>
-            <Link to="/faq" className="text-white hover:text-primary-500">FAQ</Link>
+            <Link to="/faqs" className="text-white hover:text-primary-500">FAQ</Link>
             <Link to="/contact-us" className="text-white hover:text-primary-500">Contact Us</Link>
           </div>
         </div>

@@ -45,7 +45,7 @@ const Form: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="w-9/12 mx-auto p-8 space-y-14 mb-10 ">
+        <form onSubmit={handleSubmit} className="md:w-9/12 mx-auto p-8 space-y-14 mb-10 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col">
                     <label className="mb-2 text-gray-700" htmlFor="lastName">Last Name <span className="text-red-500">*</span></label>
