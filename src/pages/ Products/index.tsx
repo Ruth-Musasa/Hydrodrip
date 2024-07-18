@@ -7,7 +7,7 @@ export default function Product() {
     return (
         <div>
             <NavBar />
-            <div className="text-white text-center  bg-custom-gradient py-60 m-auto space-y-6 clip-mountain">
+            <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                 <h1 className="text-5xl font-bold m-auto ">Our Innovative Products</h1>
                 <p className="font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
             </div>
