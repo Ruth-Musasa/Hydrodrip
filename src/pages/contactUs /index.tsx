@@ -29,21 +29,21 @@ export default function ContactUs() {
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Address</h3>
                         <div className='flex gap-2'>
                             <MdPlace className="text-primary-400" size={20} />
-                            <span className='text-primary-900 font-bold hidden md:block'>1010 Avenue Jouhanesbourg, RSA.</span>
+                            <span className='text-primary-900 font-bold '>1010 Avenue Jouhanesbourg, RSA.</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>
                         <div className='flex gap-2'>
                             <FaMailBulk className="text-primary-400" size={20} />
-                            <span className='text-primary-900 font-bold hidden md:block'>connect@hydrodrip.com</span>
+                            <span className='text-primary-900 font-bold '>connect@hydrodrip.com</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Number</h3>
                         <div className='flex gap-2'>
                             <FaPhone className='text-primary-400' size={20} />
-                            <span className='text-primary-900 font-bold hidden md:block'>+1234567890</span>
+                            <span className='text-primary-900 font-bold '>+1234567890</span>
                         </div>
                     </div>
                 </div>

@@ -16,9 +16,9 @@ export default function WaterCredit() {
             <div>
                 <NavBar />
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
-                    <div className="w-10/12 md:flex m-auto py-20 gap-20">
+                    <div className="w-10/12 md:flex m-auto  py-10 2xl:py-20 gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
-                            <h1 className="text-5xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
+                            <h1 className="text-3xl lg:text-5xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Drive sustainability while achieving economic benefits.</p>
                         </div>
                         <img src="src/assets/img/2-removebg 3.png" alt="" />
@@ -75,25 +75,28 @@ export default function WaterCredit() {
                     </div>
                     <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
                 </div>
-                <div className="py-20 md:w-10/12 m-auto">
-                    <TitleWithUnderline title="Benefits of Water Credits" classe="items-center" />
-                    <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
-                    <div className="grid md:grid-cols-3 md:gap-40 md:flex-row justify-center md:space-x-4 m-auto pb-10">
-                        <IconTitleParagraph
-                            image="src/assets/img/Icon 1.png"
-                            title="Smart Water Meters"
-                            description="Accurate and precise monitoring of water usage in real-time"
-                        />
-                        <IconTitleParagraph
-                            image="src/assets/img/Icon 1 (1).png"
-                            title="HydroWallet"
-                            description="Incentivizing water conservation with water credits"
-                        />
-                        <IconTitleParagraph
-                            image="src/assets/img/Icon 1 (2).png"
-                            title="Community Impact"
-                            description="Empowering communities through sustainable"
-                        />
+                <div className="py-20 lg:w-10/12 m-auto">
+                    <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
+                        <TitleWithUnderline title="Benefits of Water Credits" classe="items-center" />
+                        <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
+                        <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
+                            <IconTitleParagraph
+                                image="src/assets/img/Icon 1.png"
+                                title="Smart Water Meters"
+                                description="Accurate and precise monitoring of water usage in real-time"
+                            />
+                            <IconTitleParagraph
+                                image="src/assets/img/Icon 1 (1).png"
+                                title="HydroWallet"
+                                description="Incentivizing water conservation with water credits"
+                            />
+                            <IconTitleParagraph
+                                image="src/assets/img/Icon 1 (2).png"
+                                title="Community Impact"
+                                description="Empowering communities through sustainable"
+                            />
+                        </div>
+                        <Link to="/products"> <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Learn more</Btn></Link>
                     </div>
                 </div>
                 <div className="bg-primary-100">
