@@ -25,7 +25,7 @@ const projectsData = [
     },
     {
       title: "Community Water Conservation Initiatives",
-      imageUrl: "src/assets/img/Rectangle 500.png",
+      imageUrl: "../src/assets/img/Rectangle 500.png",
       sections: [
         {
           title: "Overview",
