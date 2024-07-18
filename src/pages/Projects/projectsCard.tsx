@@ -18,9 +18,9 @@ const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction })
                 <TitleWithUnderline title={`${title} `} classe="items-center" />
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 md:w-10/12 md:m-auto">
                     <div className="w-full md:w-5/12">
-                        <img src={imageUrl} alt="Image" className="w-full md:h-96 2xl:h-[500px] " />
+                        <img src={imageUrl} alt="Image" className="w-full md:h-80 md:w-auto 2xl:h-[500px] 2xl:w-auto  " />
                     </div>
-                    <div className="w-full md:w-1/2 md:pl-8 space-y-10">
+                    <div className="w-full pt-4 md:w-1/2 md:pl-8 space-y-10">
                         {
                             sections.map((section, index) => (
                                 <div key={index}>
@@ -39,7 +39,6 @@ const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction })
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
