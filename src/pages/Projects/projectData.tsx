@@ -1,7 +1,7 @@
 const projectsData = [
     {
       title: "University of Johannesburg Pilot",
-      imageUrl: "../src/assets/img/Rectangle 584.png",
+      imageUrl: "../src/assets/img/Rectangle 590.png",
       sections: [
         {
           title: "Overview",

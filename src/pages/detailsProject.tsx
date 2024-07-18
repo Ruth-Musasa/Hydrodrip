@@ -21,7 +21,7 @@ const ProjectDetails: React.FC = () => {
                 <p className="font-semibold m-auto text-lg ">Date?</p>
             </div>
             <div className=" w-11/12 md:w-9/12 m-auto lg:gap-20 2xl:gap-40 pb-20 lg:py-20">
-                <div className='w-auto h-[710px] img-div m-auto' style={{
+                <div className='w-auto h-[710px] m-auto' style={{
                     backgroundImage: `url("${project.imageUrl}")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
