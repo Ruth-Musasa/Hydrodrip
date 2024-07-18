@@ -19,9 +19,9 @@ const CardDescription: React.FC<Props> = ({
 
     return (
         <div className="lg:flex w-10/12 md:w-9/12 lg:w-10/12 m-auto lg:gap-20 2xl:gap-40 py-20 lg:pb-20 lg:pt-40 ">
-            <div className={`${bgColor} w-auto h-64 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div  `} >
-                <div className='w-auto h-full img-div'style={{
-                backgroundImage: `url("${img} ")`,
+            <div className={`${bgColor} w-auto h-64 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
+                <div className='w-auto h-full img-div m-auto'style={{
+                backgroundImage: `url("${img}")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }} ></div>

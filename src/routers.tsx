@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import SmartWaterMetter from "./pages/SmartWaterMeters.tsx";
 import WaterCredit from "./pages/WaterCredit";
 import ContactUs from "./pages/contactUs /index.tsx";
+import ProjectDetails from "./pages/detailsProject.tsx";
 import Hydrowallet from "./pages/hydrowallet.tsx";
 
 
@@ -43,16 +44,21 @@ export const navigations: Router[] = [
   },
   {
     path: "/faqs",
-    element: <FAQs/>,
+    element: <FAQs />,
   },
   {
     path: "/smart-water-metter",
-    element: <SmartWaterMetter/>,
+    element: <SmartWaterMetter />,
   },
   {
     path: "/hydrowallet",
-    element: <Hydrowallet/>,
+    element: <Hydrowallet />,
   },
+  {
+    path: "/projects/:title",
+    element: < ProjectDetails />
+  },
+
 ];
 
 
