@@ -18,18 +18,18 @@ export default function Home() {
         <div className="bg-primary-100 clip-mountain">
           <div className="relative ">
             <NavBar />
-            <img src="src/assets/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0" alt="" />
-            <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4 lg:pb-48 lg:pt-36 relative z-10">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl text-primary-900 font-bold lg:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
-              <p className="w-full md:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
+            <img src="src/assets/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12  " alt="" />
+            <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4  md:py-24 2xl:py-48  relative z-10 ">
+              <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
+              <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
             </div>
-            <img src="../src/assets/img/splash-164963_1920 2.png" className="absolute right-0 top-0" alt="" />
+            <img src="../src/assets/img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
           </div>
         </div>
       </div>
       <section>
-        <div className="w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-8 md:gap-20 py-16">
+        <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-16">
           <img src="../src/assets/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
           <div className="m-auto space-y-10 w-full md:w-1/2">
             <TitleWithUnderline title="Who are you" classe="items-start" />
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12 2xl:w-1/2 " />
         </div>
-        <div className="py-32">
+        <div className="py-20 lg:py-32">
           <div className="w-11/12 md:w-10/12 m-auto text-center">
             <TitleWithUnderline title="Serving Our Customers" classe="items-center" />
             <p className="w-full md:w-5/12 m-auto mb-8">Explore our project portfolio to see the tangible impacts of HydroWallet in enhancing water conservation efforts globally. From small communities to large industries, see how our solutions are making a difference.</p>
@@ -64,10 +64,10 @@ export default function Home() {
           </div>
         </div>
         <Divider />
-        <div className="py-20 md:w-10/12 m-auto">
+        <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
           <TitleWithUnderline title="Why choose our services" classe="items-center" />
           <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
-          <div className="grid md:grid-cols-3 md:gap-40 md:flex-row justify-center md:space-x-4 m-auto pb-10">
+          <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
             <IconTitleParagraph
               image="src/assets/img/Icon 1.png"
               title="Smart Water Meters"
@@ -84,10 +84,10 @@ export default function Home() {
               description="Empowering communities through sustainable"
             />
           </div>
-          <Link to="/products">   <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Learn more</Btn></Link>
+          <Link to="/products"> <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Learn more</Btn></Link>
         </div>
         <div className="py-16 bg-primary-100">
-          <div className="w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-8 md:gap-20">
+          <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row gap-8 lg:gap-20">
             <img src="../src/assets/img/Images.png" className="w-full md:w-1/2" alt="" />
             <div className="m-auto space-y-10 w-full md:w-1/2">
               <TitleWithUnderline title="Water credit" classe="items-start" />
@@ -113,9 +113,9 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-primary-300 py-20">
-          <div className="grid lg:grid-cols-2 w-10/12 m-auto gap-20">
+          <div className="grid md:grid-cols-2 w-10/12 m-auto lg:gap-20">
             <div className="m-auto w-3/4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white text-center leading-loose ">Trust our quality technicians buy now a Smart Water Meters            </h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white text-center lg:leading-normal ">Trust our quality technicians buy now a Smart Water Meters            </h2>
               <Link to="/contact-us" > <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
             </div>
             <img src="src/assets/img/Group 33578.png" alt="" />

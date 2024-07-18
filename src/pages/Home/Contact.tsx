@@ -32,9 +32,9 @@ const Contact: React.FC<Props> = ({ bgColor }) => {
     };
 
     return (
-        <div className={`${bgColor} py-20 md:py-32`}>
+        <div className={`${bgColor} py-20 lg:py-32`}>
             <TitleWithUnderline title="Contact Us" classe="items-center" />
-            <div className="flex flex-col md:flex-row md:p-8 md:w-10/12 m-auto ">
+            <div className="flex flex-col md:flex-row md:p-8 lg:w-10/12 m-auto ">
                 <div className="md:w-2/3 p-4 space-y-10">
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Let's Talk</h3>

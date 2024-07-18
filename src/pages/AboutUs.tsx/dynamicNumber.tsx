@@ -16,11 +16,11 @@ const Stat: React.FC<StatProps> = ({ title, value, suffix = '' }) => {
     });
 
     return (
-        <div className="flex flex-col items-center gap-4 p-4 text-white">
-            <animated.div className="text-5xl lg:text-7xl font-semibold">
+        <div className="flex flex-row md:flex-col items-center gap-4 p-4 text-white">
+            <animated.div className="text-4xl lg:text-5xl font-semibold">
                 {number.to((n) => `${n.toFixed(0)}${suffix}`)}
             </animated.div>
-            <h3 className="text-lg md:text-xl font-bold mb-2">{title}</h3>
+            <h3 className="text-sm lg:text-xl font-bold mb-2">{title}</h3>
         </div>
     );
 };
@@ -34,15 +34,14 @@ const DynamicNumber: React.FC = () => {
     ];
 
     return (
-        <div className="bg-primary-800 py-28 space-y-10 md:space-y-20">
-            <h2 className="text-3xl md:text-4xl font-bold  text-white text-center">Hydrodrip in numbers</h2>
+        <div className="bg-primary-800 py-28 space-y-10 lg:space-y-20">
+            <h2 className="text-3xl lg:text-4xl font-bold  text-white text-center">Hydrodrip in numbers</h2>
             <div className="flex flex-wrap justify-center md:gap-8 p-8">
                 {stats.map((stat, index) => (
                     <Stat key={index} title={stat.title} value={stat.value} suffix={stat.suffix} />
                 ))}
             </div>
         </div>
-
     );
 };
 

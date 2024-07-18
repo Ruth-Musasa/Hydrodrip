@@ -1,10 +1,8 @@
-
-
-
 import React, { useState } from 'react';
 import NavBar from '../components/NavBar';
 import Contact from './Home/Contact';
 import TitleWithUnderline from '../components/titleWithUnderline';
+import { FaArrowDown } from 'react-icons/fa';
 
 type FAQItem = {
     question: string;
@@ -23,7 +21,15 @@ const faqData: FAQItem[] = [
     {
         question: 'How can I install Hydrodrip?',
         answer: 'Hydrodrip is installed by professional technicians to ensure optimal performance and accuracy.'
-    }
+    },
+    {
+        question: 'How can I install Hydrodrip?',
+        answer: 'Hydrodrip is installed by professional technicians to ensure optimal performance and accuracy.'
+    },
+    {
+        question: 'How can I install Hydrodrip?',
+        answer: 'Hydrodrip is installed by professional technicians to ensure optimal performance and accuracy.'
+    },
 ];
 
 const FAQ: React.FC = () => {
@@ -48,13 +54,14 @@ const FAQ: React.FC = () => {
                 {faqData.map((item, index) => (
                     <div key={index} className="mb-4">
                         <button
-                            className="w-full px-4 py-2 text-left text-lg font-medium text-white bg-primary-900 rounded-md hover:bg-primary-950 focus:outline-none"
+                            className="flex justify-between w-full px-10 py-4 text-left text-lg font-medium text-white bg-primary-800 rounded-md hover:bg-primary-950 focus:outline-none"
                             onClick={() => handleToggle(index)}
                         >
                             {item.question}
+                            <FaArrowDown />
                         </button>
                         {openIndex === index && (
-                            <div className="mt-2 p-4 bg-white border border-blue-500 rounded-md">
+                            <div className="mt-2 p-4 bg-zinc-100">
                                 {item.answer}
                             </div>
                         )}
