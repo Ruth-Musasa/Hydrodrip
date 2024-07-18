@@ -5,6 +5,7 @@ import ParagraphDescription from "../../components/paragraphDescription";
 import TitleWithUnderline from "../../components/titleWithUnderline";
 import Contact from "../Home/Contact";
 import FAQs from "../Home/faqs";
+import CardDescription from "./cardDescription";
 import CardPhoto from "./cardPhoto";
 import CardWithIcon from "./cardWithIcon";
 import DynamicNumber from "./dynamicNumber";
@@ -20,14 +21,7 @@ export default function AboutUs() {
                 </div>
             </section>
             <section>
-                <div className="lg:flex w-10/12 md:w-9/12 lg:w-10/12 m-auto lg:gap-20 2xl:gap-40 pb-20 lg:py-20">
-                    <img src="src/assets/img/Images8.png" alt="" className="w-full lg:w-1/2"/>
-                    <div className="w-full lg:w-1/2 m-auto pt-10">
-                        <TitleWithUnderline title="Hydrodrip: Pioneering Water Management Since 2023" classe="items-start" />
-                        <p className="mb-10">Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency.</p>
-                        <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Learn more</Btn>
-                    </div>
-                </div>
+                <CardDescription  img="src/assets/img/pexels-photo-7688336.webp"   btnAction="Learn more" title="Hydrodrip: Pioneering Water Management Since 2023" description="Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency." />
                 <Divider />
                 <CardWithIcon img="src/assets/img/Image6.png">
                     <TitleWithUnderline title="Our mission" classe="items-start" />

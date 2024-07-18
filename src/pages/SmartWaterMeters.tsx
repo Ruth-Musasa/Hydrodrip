@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import IconTitleParagraph from "../components/iconParagraph";
 import ParagraphDescription from "../components/paragraphDescription";
 import TitleWithUnderline from "../components/titleWithUnderline";
-import FAQs from "./FAQs";
+import FAQs from "./Home/faqs";
 import Contact from "./Home/Contact";
 import UserTestimonials from "./Home/userTestimonial";
 
@@ -15,7 +15,7 @@ export default function SmartWaterMetter() {
             <div>
                 <NavBar />
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
-                    <div className="w-10/12 md:flex m-auto py-20 gap-20">
+                    <div className="w-10/12 md:flex m-auto  py-10 2xl:py-20 gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
                             <h1 className="text-5xl font-bold m-auto ">Optimize Your Water Usage with <span className="text-secondary-300"> Smart Water Meters</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Empowering you with real-time monitoring and complete control over your water consumption.                    </p>
@@ -25,7 +25,7 @@ export default function SmartWaterMetter() {
                 </div>
             </div>
             <section >
-                <div className="py-16 w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-8 md:gap-20">
+                <div className="py-16 w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row  2xl:gap-20">
                     <img src="../src/assets/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
                     <div className="m-auto space-y-10 w-full md:w-1/2">
                         <TitleWithUnderline title="What are Smart Water Meters ?" classe="items-start" />

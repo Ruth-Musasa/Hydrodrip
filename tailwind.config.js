@@ -35,6 +35,9 @@ export default {
           '950': '#441806',
         },
 
+      },
+      borderRadius:{
+        'img-radius':'0px 300px 100px 100px'
       }
     },
   },

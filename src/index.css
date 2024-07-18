@@ -7,3 +7,7 @@
         font-family: "Open Sans", sans-serif;
     }
 }
+
+.img-div {
+    border-radius: 0px 300px 100px 100px;
+  }

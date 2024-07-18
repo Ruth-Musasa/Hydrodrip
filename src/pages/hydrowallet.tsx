@@ -9,6 +9,7 @@ import ParagraphDescription from "../components/paragraphDescription";
 import FAQs from "./Home/faqs";
 import UserTestimonials from "./Home/userTestimonial";
 import Divider from "../components/divider";
+import CardDescription from "./AboutUs.tsx/cardDescription";
 
 
 export default function Hydrowallet() {
@@ -17,7 +18,7 @@ export default function Hydrowallet() {
             <div>
                 <NavBar />
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
-                    <div className="w-10/12 md:flex m-auto py-20 gap-20">
+                    <div className="w-10/12 md:flex m-auto py-10 2xl:py-20 gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
                             <h1 className="text-5xl font-bold m-auto ">Manage Your Water Smarter with  <span className="text-secondary-300"> HydroWallet</span> </h1>
                             <p className="font-semibold m-auto text-lg pb-10">Intuitive water management directly from your device.</p>
@@ -58,15 +59,8 @@ export default function Hydrowallet() {
                     </div>
                 </div>
                 <Divider />
-                <div className="flex w-10/12 m-auto gap-40 pb-20">
-                    <img src="src/assets/img/Image (1).png" alt="" />
-                    <div className="m-auto">
-                        <TitleWithUnderline title="Pay Your Subscription and Monitor Your Consumption with One Click " classe="items-start" />
-                        <p className="mb-10">HydroWallet simplifies and enhances water usage management by offering seamless payment options, real-time monitoring, and an intuitive user interface. With just a few clicks, users can manage their water subscription payments and avoid late fees. The app provides real-time data on water usage, helping users identify areas to save water and reduce costs. Its user-friendly design ensures easy access to all features, while notifications and alerts keep users informed about payment status and any unusual consumption patterns. Advanced security measures protect personal and payment information, giving users peace of mind.
-                        </p>
-                        <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false}>Download the app</Btn>
-                    </div>
-                </div>
+                <CardDescription bgColor="bg-secondary-300" img="src/assets/img/2-removebg 4.png" btnAction="Download the app" title="Pay Your Subscription and Monitor Your Consumption with One Click"
+                    description="HydroWallet simplifies and enhances water usage management by offering seamless payment options, real-time monitoring, and an intuitive user interface. With just a few clicks, users can manage their water subscription payments and avoid late fees. The app provides real-time data on water usage, helping users identify areas to save water and reduce costs. Its user-friendly design ensures easy access to all features, while notifications and alerts keep users informed about payment status and any unusual consumption patterns. Advanced security measures protect personal and payment information, giving users peace of mind." />
                 <Divider />
                 <CardWithIcon img="src/assets/img/Image7.png">
                     <TitleWithUnderline title="Benefits" classe="items-start" />
