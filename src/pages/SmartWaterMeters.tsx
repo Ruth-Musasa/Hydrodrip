@@ -26,7 +26,7 @@ export default function SmartWaterMetter() {
             </div>
             <section >
                 <div className="py-16 w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row  2xl:gap-20">
-                    <img src="../public/img/Section 1-image.png" className="w-full md:w-1/2 md:h-auto" alt="" />
+                    <img src="./public/img/Section 1-image.png" className="w-full md:w-1/2 md:h-auto" alt="" />
                     <div className="m-auto space-y-5 2xl:space-y-10 w-full md:w-1/2">
                         <TitleWithUnderline title="What are Smart Water Meters ?" classe="items-start" />
                         <p >Our Smart Water Meters integrate advanced IoT technology to deliver precise, real-time insights into water usage. They are designed to help households, industries, and municipalities manage water more efficiently, saving costs and promoting sustainable practices.</p>
@@ -90,7 +90,7 @@ export default function SmartWaterMetter() {
                 </div>
                 <div className="bg-primary-300 py-20">
                     <div className="grid lg:grid-cols-2 w-10/12 m-auto gap-20">
-                        <img src="../public/img/Image9s.png" alt="" className="" />
+                        <img src="./public/img/Image9s.png" alt="" className="" />
                         <div className="m-auto w-3/4">
                             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white text-center">Trust our quality technicians buy now a Smart Water Meters            </h2>
                             <Link to="/contact-us" ><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>

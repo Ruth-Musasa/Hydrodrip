@@ -17,19 +17,19 @@ export default function Home() {
         <div className="bg-primary-100 clip-mountain">
           <div className="relative ">
             <NavBar />
-            <img src="public/img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12  " alt="" />
+            <img src="./img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12  " alt="" />
             <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4  md:py-24 2xl:py-48  relative z-10 ">
-              <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
+              <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">RRedefining Water Conservation with HydroWallet</h1>
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
             </div>
-            <img src="../public/img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
+            <img src="./public/img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
           </div>
         </div>
       </div>
       <section>
         <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-16">
-          <img src="../public/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
+          <img src="./public/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
           <div className="m-auto space-y-10 w-full md:w-1/2">
             <TitleWithUnderline title="Who are you" classe="items-start" />
             <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         <div className="py-16 bg-primary-100">
           <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row gap-8 lg:gap-20">
-            <img src="../public/img/Images.png" className="w-full md:w-1/2" alt="" />
+            <img src="./public/img/Images.png" className="w-full md:w-1/2" alt="" />
             <div className="m-auto space-y-10 w-full md:w-1/2">
               <TitleWithUnderline title="Water credit" classe="items-start" />
               <p>At HydroDrip, we are pioneers in the field of water management, dedicated to delivering innovative solutions that ensure efficient water use and conservation. Our mission is to empower communities and industries with advanced technologies that promote sustainable water practices and secure water resources for future generations</p>
