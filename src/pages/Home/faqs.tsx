@@ -6,7 +6,7 @@ export default function FAQs() {
     return (
         <div className=" bg-cover bg-center py-40  bg-contain"
             style={{
-                backgroundImage: `url("src/assets/img/Rectangle 580.png")`,
+                backgroundImage: `url("public/img/Rectangle 580.png")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}>

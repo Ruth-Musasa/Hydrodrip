@@ -22,7 +22,7 @@ export default function ContactUs() {
                 <Form />
                 <Divider />
             </div>
-            <CardPhoto img="src/assets/img/Rectangle 589.png">
+            <CardPhoto img="public/img/Rectangle 589.png">
                 <TitleWithUnderline title="Our contact details" classe="items-start" />
                 <div className="md:w-2/3 space-y-6">
                     <div>

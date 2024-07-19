@@ -4,9 +4,9 @@ import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 const ImageCarousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        'src/assets/img/Rectangle 595.png',
-        'src/assets/img/Rectangle 596.png',
-        'src/assets/img/Rectangle 597.png',
+        '../public/img/Rectangle 595.png',
+        '../public/img/Rectangle 596.png',
+        '../public/img/Rectangle 597.png',
     ];
 
     const handlePrev = () => {

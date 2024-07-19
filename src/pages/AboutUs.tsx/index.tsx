@@ -21,30 +21,30 @@ export default function AboutUs() {
                 </div>
             </section>
             <section>
-                <CardDescription  img="src/assets/img/pexels-photo-7688336.webp"   btnAction="Learn more" title="Hydrodrip: Pioneering Water Management Since 2023" description="Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency." />
+                <CardDescription  img="public/img/pexels-photo-7688336.webp"   btnAction="Learn more" title="Hydrodrip: Pioneering Water Management Since 2023" description="Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency." />
                 <Divider />
-                <CardWithIcon img="src/assets/img/Image6.png">
+                <CardWithIcon img="public/img/Image6.png">
                     <TitleWithUnderline title="Our mission" classe="items-start" />
                     <p className="mb-12"> Our smart water meters and HydroWallet app make water usage tracking and payments as seamless as possible, facilitating a hassle-free experience for all users.</p>
                     <ParagraphDescription
                         sections={[
                             {
                                 title: "Easy Payment Solutions",
-                                img: "src/assets/img/Icon 5.png",
+                                img: "public/img/Icon 5.png",
                                 paragraphs: [
                                     "Our smart water meters and HydroWallet app make water usage tracking and payments as seamless as possible, facilitating a hassle-free experience for all users.",
                                 ]
                             },
                             {
                                 title: "Rewards and Loyalty Programs",
-                                img: "src/assets/img/Icon 2.png",
+                                img: "public/img/Icon 2.png",
                                 paragraphs: [
                                     "Earn rewards for conserving water. Our HydroWallet app allows users to collect water credits that can be redeemed or used to pay water bills, fostering a culture of conservation.",
                                 ]
                             },
                             {
                                 title: "Conservation and Trading",
-                                img: "src/assets/img/Icone 3.png",
+                                img: "public/img/Icone 3.png",
                                 paragraphs: [
                                     "Hydrodrip enables users to trade water credits on a secure platform, promoting responsible water consumption and supporting community-wide conservation efforts.",
                                 ]
@@ -54,28 +54,28 @@ export default function AboutUs() {
                 </CardWithIcon>
                 <div className="pt-20"></div>
                 <Divider />
-                <CardPhoto img="src/assets/img/Rectangle 5.png">
+                <CardPhoto img="public/img/Rectangle 5.png">
                     <TitleWithUnderline title="Our services" classe="items-start" />
                     <p>Tailored solutions for real-time water management.</p>
                     <ParagraphDescription
                         sections={[
                             {
                                 title: "Real-Time Monitoring",
-                                img: "src/assets/img/List.png",
+                                img: "public/img/List.png",
                                 paragraphs: [
                                     "Track water usage dynamically to detect leaks and patterns, ensuring optimal water management.",
                                 ]
                             },
                             {
                                 title: "Accurate Data",
-                                img: "src/assets/img/List.png",
+                                img: "public/img/List.png",
                                 paragraphs: [
                                     "Receive data you can trust with our high-precision meters that ensure billing accuracy and water usage transparency.",
                                 ]
                             },
                             {
                                 title: "Alerts and Notifications",
-                                img: "src/assets/img/List.png",
+                                img: "public/img/List.png",
                                 paragraphs: [
                                     "Stay informed with instant alerts on leaks, potential over-usage, or system malfunctions to promptly address any issues.",
                                 ]

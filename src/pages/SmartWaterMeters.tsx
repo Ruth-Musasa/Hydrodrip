@@ -20,13 +20,13 @@ export default function SmartWaterMetter() {
                             <h1 className="text-4xl lg:text-5xl font-bold m-auto ">Optimize Your Water Usage with <span className="text-secondary-300"> Smart Water Meters</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Empowering you with real-time monitoring and complete control over your water consumption.                    </p>
                         </div>
-                        <img src="src/assets/img/2-removebg 2.png" alt="" />
+                        <img src="public/img/2-removebg 2.png" alt="" />
                     </div>
                 </div>
             </div>
             <section >
                 <div className="py-16 w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row  2xl:gap-20">
-                    <img src="../src/assets/img/Section 1-image.png" className="w-full md:w-1/2 md:h-auto" alt="" />
+                    <img src="../public/img/Section 1-image.png" className="w-full md:w-1/2 md:h-auto" alt="" />
                     <div className="m-auto space-y-5 2xl:space-y-10 w-full md:w-1/2">
                         <TitleWithUnderline title="What are Smart Water Meters ?" classe="items-start" />
                         <p >Our Smart Water Meters integrate advanced IoT technology to deliver precise, real-time insights into water usage. They are designed to help households, industries, and municipalities manage water more efficiently, saving costs and promoting sustainable practices.</p>
@@ -36,21 +36,21 @@ export default function SmartWaterMetter() {
                                 sections={[
                                     {
                                         title: "Real-Time Monitoring",
-                                        img: "src/assets/img/List.png",
+                                        img: "public/img/List.png",
                                         paragraphs: [
                                             "Track water usage dynamically to detect leaks and patterns, ensuring optimal water management.",
                                         ]
                                     },
                                     {
                                         title: "Accurate Data",
-                                        img: "src/assets/img/List.png",
+                                        img: "public/img/List.png",
                                         paragraphs: [
                                             "Receive data you can trust with our high-precision meters that ensure billing accuracy and water usage transparency.",
                                         ]
                                     },
                                     {
                                         title: "Alerts and Notifications",
-                                        img: "src/assets/img/List.png",
+                                        img: "public/img/List.png",
                                         paragraphs: [
                                             "Stay informed with instant alerts on leaks, potential over-usage, or system malfunctions to promptly address any issues.",
                                         ]
@@ -90,7 +90,7 @@ export default function SmartWaterMetter() {
                 </div>
                 <div className="bg-primary-300 py-20">
                     <div className="grid lg:grid-cols-2 w-10/12 m-auto gap-20">
-                        <img src="../src/assets/img/Image9s.png" alt="" className="" />
+                        <img src="../public/img/Image9s.png" alt="" className="" />
                         <div className="m-auto w-3/4">
                             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white text-center">Trust our quality technicians buy now a Smart Water Meters            </h2>
                             <Link to="/contact-us" ><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
