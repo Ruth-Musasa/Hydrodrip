@@ -82,7 +82,7 @@ export default function Product() {
                     title="Water Credit Model"
                     btnAction="Learn more"
                     to="/water-credit"
-                    imageUrl="public/img/Image (2).png"
+                    imageUrl="../img/Image (2).png"
                     bgColor="bg-zinc-100"
                     descriptionTitle="Description"
                     description="Our Water Credit Model introduces a transformative approach to water management, allowing users and businesses to trade water credits for conserving water"
