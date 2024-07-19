@@ -25,8 +25,8 @@ const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descripti
         <div className='py-14'>
             <TitleWithUnderline title={`${title} `} classe="items-center" />
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 w-11/12 lg:w-10/12 m-auto">
-                <div className="flex gap-20 w-full ">
-                    <div className={`${bgColor} w-auto h-64 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
+                <div className="md:flex gap-20 w-full ">
+                    <div className={`${bgColor} mb-4 w-auto h-64 w-auto lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
                         <div className='w-auto h-full img-div bg-no-repeat' style={{
                             backgroundImage: `url("${imageUrl}")`,
                             backgroundSize: 'cover',

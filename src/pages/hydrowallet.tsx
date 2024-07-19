@@ -1,4 +1,3 @@
-import { IoMdSpeedometer } from "react-icons/io";
 import NavBar from "../components/NavBar";
 import TitleWithUnderline from "../components/titleWithUnderline";
 import IconTitleParagraph from "../components/iconParagraph";
@@ -13,6 +12,7 @@ import CardDescription from "./AboutUs.tsx/cardDescription";
 import { FiDownload } from "react-icons/fi";
 import { RxPerson } from "react-icons/rx";
 import { BsBarChartLine } from "react-icons/bs";
+import HighlightsCard from "../components/hightlightCard";
 
 
 export default function Hydrowallet() {
@@ -21,9 +21,9 @@ export default function Hydrowallet() {
             <div>
                 <NavBar />
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
-                    <div className="w-10/12 md:flex m-auto py-10 2xl:py-20 gap-20">
+                    <div className="w-11/12 lg:w-10/12 md:flex m-auto py-10 2xl:py-20 lg:gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
-                            <h1 className="text-5xl font-bold m-auto ">Manage Your Water Smarter with  <span className="text-secondary-300"> HydroWallet</span> </h1>
+                            <h1 className="text-4xl lg:text-5xl font-bold m-auto ">Manage Your Water Smarter with  <span className="text-secondary-300"> HydroWallet</span> </h1>
                             <p className="font-semibold m-auto text-lg pb-10">Intuitive water management directly from your device.</p>
                             <Link to="/">  <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} >Download Now</Btn></Link>
                         </div>
@@ -45,7 +45,7 @@ export default function Hydrowallet() {
                         />
                         <div className="hidden md:block w-1/4 border-t-2 border-dashed border-primary-900 mt-20" />
                         <IconTitleParagraph
-                            icon={() => <RxPerson  className="text-5xl font-bold text-secondary-500 " />}
+                            icon={() => <RxPerson className="text-5xl font-bold text-secondary-500 " />}
                             title="Set Up Your Profile"
                             description="After creating your account, set up your profile with details like your water provider. Follow the prompts to start using HydroWallet."
                             bgColor="bg-secondary-100 w-32 h-32"
@@ -53,7 +53,7 @@ export default function Hydrowallet() {
                         />
                         <div className="hidden md:block w-1/4 border-t-2 border-dashed border-primary-900  mt-20" />
                         <IconTitleParagraph
-                            icon={() => <BsBarChartLine  className="text-5xl font-bold text-secondary-500 " />}
+                            icon={() => <BsBarChartLine className="text-5xl font-bold text-secondary-500 " />}
                             title="Start Managing Water"
                             description="Start managing your water usage today with HydroWallet for a more sustainable and efficient tomorrow, ensuring smarter water consumption and conservation."
                             bgColor="bg-secondary-100 w-32 h-32"
@@ -70,30 +70,42 @@ export default function Hydrowallet() {
                     <ParagraphDescription
                         sections={[
                             {
-                                title: "Easy Payment Solutions",
-                                img: "src/assets/img/Icon 5.png",
+                                title: "Enhanced control",
+                                img: "../src/assets/img/Icon 5.png",
                                 paragraphs: [
-                                    "Our smart water meters and HydroWallet app make water usage tracking and payments as seamless as possible, facilitating a hassle-free experience for all users.",
+                                    "Users can monitor and adjust their consumption in real time.",
                                 ]
                             },
                             {
-                                title: "Rewards and Loyalty Programs",
-                                img: "src/assets/img/Icon 2.png",
+                                title: "Incentivize conservation",
+                                img: "../src/assets/img/Icon 2.png",
                                 paragraphs: [
-                                    "Earn rewards for conserving water. Our HydroWallet app allows users to collect water credits that can be redeemed or used to pay water bills, fostering a culture of conservation.",
+                                    "Encourage responsible water usage through rewards.",
                                 ]
                             },
                             {
-                                title: "Conservation and Trading",
-                                img: "src/assets/img/Icone 3.png",
+                                title: "Boost sustainability:",
+                                img: "../src/assets/img/facile 3.png",
                                 paragraphs: [
-                                    "Hydrodrip enables users to trade water credits on a secure platform, promoting responsible water consumption and supporting community-wide conservation efforts.",
+                                    "Supports environmental conservation efforts.",
                                 ]
                             },
                         ]}
                     />
                 </CardWithIcon>
+                <div className="py-16 w-10/12 m-auto">
+                    <Divider />
+                    <TitleWithUnderline title="Feature Highlights" classe="items-center" />
+                    <p className="text-center mb-10">All You Need for Smarter Water Management</p>
+                    <div className="grid md:grid-cols-3 gap-10 2xl:gap-16">
+                        <HighlightsCard bgcolor="bg-primary-500" img="src/assets/img/Rectangle 594 .png" description="Real-Time Monitoring"/>
+                        <HighlightsCard bgcolor="bg-zinc-500" img="src/assets/img/Rectangle 594.png" description="Automated Payments"/>
+                        <HighlightsCard bgcolor="bg-secondary-500" img="src/assets/img/Rectangle 594 (1).png" description="Rewards Program"/>
+                    </div>
+                </div>
+                <div className="bg-zinc-100">
                 <UserTestimonials />
+                </div>
                 <FAQs />
                 <div className="py-28 space-y-10 bg-primary-100" >
                     <TitleWithUnderline title="Join millions of users today" classe="items-center" />
