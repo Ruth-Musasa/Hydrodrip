@@ -18,7 +18,7 @@ export default function Projects() {
                 <ProjectsCard
                     title="University of Johannesburg Pilot"
                     btnAction="Explore more"
-                    imageUrl="./public/img/Rectangle 584.png"
+                    imageUrl="../img/Rectangle 584.png"
                     sections={[
                         {
                             title: "Overview",

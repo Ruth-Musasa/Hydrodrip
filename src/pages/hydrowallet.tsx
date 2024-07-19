@@ -71,21 +71,21 @@ export default function Hydrowallet() {
                         sections={[
                             {
                                 title: "Enhanced control",
-                                img: "./public/img/Icon 5.png",
+                                img: "../img/Icon 5.png",
                                 paragraphs: [
                                     "Users can monitor and adjust their consumption in real time.",
                                 ]
                             },
                             {
                                 title: "Incentivize conservation",
-                                img: "./public/img/Icon 2.png",
+                                img: "../img/Icon 2.png",
                                 paragraphs: [
                                     "Encourage responsible water usage through rewards.",
                                 ]
                             },
                             {
                                 title: "Boost sustainability:",
-                                img: "./public/img/facile 3.png",
+                                img: "../img/facile 3.png",
                                 paragraphs: [
                                     "Supports environmental conservation efforts.",
                                 ]
