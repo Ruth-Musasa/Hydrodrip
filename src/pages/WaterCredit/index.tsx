@@ -82,17 +82,17 @@ export default function WaterCredit() {
                         <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
                         <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
                             <IconTitleParagraph
-                                image="./public/img/Icon 14.png"
+                                image="../img/Icon 14.png"
                                 title="For Consumers"
                                 description="Reduced water bills and rewards for sustainable practices."
                             />
                             <IconTitleParagraph
-                                image="./public/img/Icon 1 (1)4.png"
+                                image="../img/Icon 1 (1)4.png"
                                 title="For Communities"
                                 description="Funding for new water infrastructure projects."
                             />
                             <IconTitleParagraph
-                                image="./public/img/Icon 1 (2)4.png"
+                                image="../img/Icon 1 (2)4.png"
                                 title=" For Industries"
                                 description="Offset water consumption and improve ESG scores."
                             />

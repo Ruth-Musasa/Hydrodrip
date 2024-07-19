@@ -23,13 +23,13 @@ export default function Home() {
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
             </div>
-            <img src="./public/img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
+            <img src="../img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
           </div>
         </div>
       </div>
       <section>
         <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-16">
-          <img src="./public/img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
+          <img src="../img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
           <div className="m-auto space-y-10 w-full md:w-1/2">
             <TitleWithUnderline title="Who are you" classe="items-start" />
             <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         <div className="py-16 bg-primary-100">
           <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row gap-8 lg:gap-20">
-            <img src="./public/img/Images.png" className="w-full md:w-1/2" alt="" />
+            <img src="../img/Images.png" className="w-full md:w-1/2" alt="" />
             <div className="m-auto space-y-10 w-full md:w-1/2">
               <TitleWithUnderline title="Water credit" classe="items-start" />
               <p>At HydroDrip, we are pioneers in the field of water management, dedicated to delivering innovative solutions that ensure efficient water use and conservation. Our mission is to empower communities and industries with advanced technologies that promote sustainable water practices and secure water resources for future generations</p>
