@@ -1,8 +1,13 @@
 import Product from "./pages/ Products";
 import AboutUs from "./pages/AboutUs.tsx";
+import FAQs from "./pages/FAQs.tsx";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import SmartWaterMetter from "./pages/SmartWaterMeters.tsx";
 import WaterCredit from "./pages/WaterCredit";
+import ContactUs from "./pages/contactUs /index.tsx";
+import ProjectDetails from "./pages/detailsProject.tsx";
+import Hydrowallet from "./pages/hydrowallet.tsx";
 
 
 
@@ -15,28 +20,44 @@ interface Router {
 export const navigations: Router[] = [
   {
     path: "/",
-    element:<Home/> ,
+    element: <Home />,
   },
   {
     path: "/products",
-    element:<Product/> ,
+    element: <Product />,
   },
   {
     path: "/projects",
-    element:<Projects/> ,
+    element: <Projects />,
   },
   {
     path: "/water-credit",
-    element:<WaterCredit/> ,
+    element: <WaterCredit />,
   },
   {
     path: "/about-us",
-    element:<AboutUs/> ,
+    element: <AboutUs />,
   },
-  // {
-  //   path: "/contacts",
-  //   element:<Contacts/> ,
-  // },
+  {
+    path: "/contact-us",
+    element: <ContactUs />,
+  },
+  {
+    path: "/faqs",
+    element: <FAQs />,
+  },
+  {
+    path: "/smart-water-metter",
+    element: <SmartWaterMetter />,
+  },
+  {
+    path: "/hydrowallet",
+    element: <Hydrowallet />,
+  },
+  {
+    path: "/projects/:title",
+    element: < ProjectDetails />
+  },
 
 ];
 

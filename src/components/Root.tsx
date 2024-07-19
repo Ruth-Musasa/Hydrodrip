@@ -1,8 +1,3 @@
-// import { Outlet } from "react-router-dom";
-
-// export default function Root() {
-//   return <Outlet />;
-// }
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";

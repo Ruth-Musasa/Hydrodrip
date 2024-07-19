@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
 type BtnProps = {
@@ -6,13 +6,19 @@ type BtnProps = {
     Style: 'Filled' | 'Outlined';
     Color: 'primary' | 'Secondary';
     State: 'Default' | 'Disabled';
-    icon: boolean
+    icon: boolean;
     children: React.ReactNode;
-    classe?:string;
+    classe?: string;
 };
 
-const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon ,classe }) => {
-    const baseStyles = 'flex items-center justify-center rounded transition duration-300';
+const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon, classe }) => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsActive(!isActive);
+    };
+
+    const baseStyles = 'flex items-center justify-center rounded transition duration-300 font-bold';
 
     const sizeStyles = {
         small: 'px-2 py-1 text-sm',
@@ -21,13 +27,13 @@ const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon ,cl
     };
 
     const styleStyles = {
-        Filled: 'bg-primary-500 text-white hover:bg-primary-700',
-        Outlined: 'border border-primary-500 text-primary-500',
+        Filled: `bg-primary-500 text-white ${isActive ? 'bg-primary-700' : 'hover:bg-primary-600'}`,
+        Outlined: `border border-primary-500 text-primary-500 ${isActive ? 'border-primary-700' : 'hover:border-primary-600'}`,
     };
 
     const colorStyles = {
-        primary: 'bg-primary-500 text-white hover:bg-primary-600',
-        Secondary: 'bg-gray-500 text-white hover:bg-gray-600',
+        primary: `bg-primary-500 text-white ${isActive ? 'bg-primary-600' : 'hover:bg-primary-700'}`,
+        Secondary: `bg-gray-500 text-white ${isActive ? 'bg-gray-600' : 'hover:bg-gray-700'}`,
     };
 
     const stateStyles = {
@@ -39,10 +45,10 @@ const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon ,cl
         <button
             className={`${classe} ${baseStyles} ${sizeStyles[Size]} ${styleStyles[Style]} ${colorStyles[Color]} ${stateStyles[State]} `}
             disabled={State === 'Disabled'}
+            onClick={handleButtonClick}
         >
             {children}
             {icon ? <FaArrowRight className="ml-2" /> : null}
-
         </button>
     );
 };

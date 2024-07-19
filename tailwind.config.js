@@ -20,7 +20,24 @@ export default {
           '700': '#0f5c95',
           '800': '#0A4B75',
           '900': '#083C5C',
-        }
+        },
+        secondary: {
+          '50': '#fff8ed',
+          '100': '#fff0d4',
+          '200': '#ffdda9',
+          '300': '#ffbf66',
+          '400': '#fea039',
+          '500': '#E18A02',
+          '600': '#ed6709',
+          '700': '#c54d09',
+          '800': '#9c3d10',
+          '900': '#7e3410',
+          '950': '#441806',
+        },
+
+      },
+      borderRadius:{
+        'img-radius':'0px 300px 100px 100px'
       }
     },
   },
@@ -28,10 +45,11 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.clip-mountain': {
-          'clip-path': 'polygon(0 0, 100% 0, 100% 90%, 0 100%)',
+          'clip-path': 'polygon(0 0, 100% 0,100% 95%, 0 100%)',
+          borderRadius: '0% 0% 90% 10% / 0% 0% 20% 2%',
         },
       });
-      
+
     },
   ],
 }

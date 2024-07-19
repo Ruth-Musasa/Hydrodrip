@@ -1,66 +1,110 @@
 import NavBar from "../../components/NavBar";
-import Card from "../../components/card";
+import Divider from "../../components/divider";
+import Contact from "../Home/Contact";
+import Card from "./card";
 
 export default function Product() {
     return (
         <div>
             <NavBar />
-            <div className="text-white text-center  bg-custom-gradient py-60 m-auto space-y-6 clip-mountain">
-                <h1 className="text-5xl font-bold m-auto ">Our Impactful Projects</h1>
-                <p className="font-semibold m-auto text-lg ">Driving sustainable water management through innovative projects</p>
+            <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
+                <h1 className="text-5xl font-bold m-auto ">Our Innovative Products</h1>
+                <p className="font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
             </div>
-            <section className="bg-white py-16">
-                <div className="w-11/12 md:w-10/12 m-auto">
-                    <Card
-                        title="Titre1"
-                        btnAction="Read more"
-                        icon={true}
-                        imageUrl="../src/assets/img/Rectangle 584.png"
-                        sections={[
-                            {
-                                title: "Section 1",
-                                paragraphs: [
-                                    "Premier paragraphe de la section 1.",
-                                    "Deuxième paragraphe de la section 1.",
-                                ]
-                            },
-                            {
-                                title: "Section 2",
-                                paragraphs: [
-                                    "Premier paragraphe de la section 2.",
-                                    "Deuxième paragraphe de la section 2.",
-                                ]
-                            }
-                        ]}
-                    />
-                </div>
+            <section className="bg-white ">
+                <Card
+                    title="Smart Water Meters"
+                    btnAction="Learn more"
+                    to="/smart-water-metter"
+                    imageUrl="../src/assets/img/2-removebg 2.png"
+                    bgColor="bg-primary-800"
+                    descriptionTitle="Description"
+                    description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
+                    sections={[
+                        {
+                            title: "Real-time data",
+                            icon:true,
+                            paragraphs: [
+                                "Immediate insights into water consumption patterns.",
+                            ]
+                        },
+                        {
+                            title: "High accuracy",
+                            icon:true,
+                            paragraphs: [
+                                "Ensure precise measurements for billing and monitoring.",
+                            ]
+                        },
+                        {
+                            title: "Easy integration",
+                            icon:true,
+                            paragraphs: [
+                                "Compatible with existing water supply systems.",
+                            ]
+                        }
+                    ]}
+                />
+                <Divider />
+                <Card
+                    title="Hydrowallet"
+                    btnAction="Learn more"
+                    to="/hydrowallet"
+                    imageUrl="../src/assets/img/2-removebg 4.png"
+                    bgColor="bg-secondary-300"
+                    descriptionTitle="Description"
+                    description="Our innovative HydroWallet platform automates water credit transactions, empowering users to manage their water consumption more effectively."
+                    sections={[
+                        {
+                            title: "Mobile tracking",
+                            icon:true,
+                            paragraphs: [
+                                "Monitor your water usage on-the-go.",
+                            ]
+                        },
+                        {
+                            title: "Water credits",
+                            icon:true,
+                            paragraphs: [
+                                "Earn credits for reduced consumption.",
+                            ]
+                        },
+                        {
+                            title: "Blockchain verification",
+                            icon:true,
+                            paragraphs: [
+                                "Secure and transparent transactions.",
+                            ]
+                        }
+                    ]}
+                />
+                <Divider />
+                <Card
+                    title="Water Credit Model"
+                    btnAction="Learn more"
+                    to="/water-credit"
+                    imageUrl="src/assets/img/Image (2).png"
+                    bgColor="bg-zinc-100"
+                    descriptionTitle="Description"
+                    description="Our Water Credit Model introduces a transformative approach to water management, allowing users and businesses to trade water credits for conserving water"
+                    sections={[
+                        {
+                            title: "Trading platform",
+                            icon:true,
+                            paragraphs: [
+                                "A robust marketplace for buying and selling water credits.",
+                            ]
+                        },
+                        {
+                            title: "Community benefits",
+                            icon:true,
+                            paragraphs: [
+                                "Supports local water conservation initiatives.",
+                            ]
+                        },
+                    ]}
+                />
             </section>
-            <section className="bg-white py-16">
-                <div className="w-11/12 md:w-10/12 m-auto">
-                    <Card
-                        title="Titre1"
-                        btnAction="Read more"
-                        icon={true}
-                        imageUrl="../src/assets/img/Rectangle 584.png"
-                        sections={[
-                            {
-                                title: "Section 1",
-                                paragraphs: [
-                                    "Premier paragraphe de la section 1.",
-                                    "Deuxième paragraphe de la section 1.",
-                                ]
-                            },
-                            {
-                                title: "Section 2",
-                                paragraphs: [
-                                    "Premier paragraphe de la section 2.",
-                                    "Deuxième paragraphe de la section 2.",
-                                ]
-                            }
-                        ]}
-                    />
-                </div>
-            </section>
+            <Contact titleDescription="Get in Touch" description="We're eager to hear from you. Whether you have a question or need assistance, our team is ready to help." bgColor="bg-primary-100" />
         </div>
     )
 }
