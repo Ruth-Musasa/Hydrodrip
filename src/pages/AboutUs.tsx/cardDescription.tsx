@@ -19,13 +19,13 @@ const CardDescription: React.FC<Props> = ({
 
     return (
         <div className="lg:flex w-10/12 md:w-9/12 lg:w-10/12 m-auto lg:gap-20 2xl:gap-40 py-20 lg:pb-20 lg:pt-40 ">
-            <div className={`${bgColor} w-auto h-64 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
+            <div className={`${bgColor} w-auto h-64 md:h-96 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
                 <div className='w-auto h-full img-div m-auto'style={{
                 backgroundImage: `url("${img}")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }} ></div>
-                <img src="src/assets/img/Triangle.png" className='w-1/2 absolute -top-20 lg:-top-40 2xl:-top-60' alt="" />
+                <img src="src/assets/img/Triangle.png" className='w-1/2 absolute -top-20  md:-top-40 2xl:-top-60' alt="" />
             </div>
             <div className="w-full lg:w-1/2 m-auto pt-10">
                 <TitleWithUnderline title={title} classe="items-start" />
