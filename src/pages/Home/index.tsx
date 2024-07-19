@@ -17,7 +17,7 @@ export default function Home() {
         <div className="bg-primary-100 clip-mountain">
           <div className="relative ">
             <NavBar />
-            <img src="./img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12  " alt="" />
+            <img src="../img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12  " alt="" />
             <div className="w-11/12 md:w-10/12 m-auto space-y-10 pb-20 pt-4  md:py-24 2xl:py-48  relative z-10 ">
               <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</p>
