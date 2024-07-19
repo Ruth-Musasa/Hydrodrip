@@ -1,7 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Btn from '../components/Button';
-import TitleWithUnderline from '../components/titleWithUnderline';
 import projectsData from './Projects/projectData';
 import NavBar from '../components/NavBar';
 

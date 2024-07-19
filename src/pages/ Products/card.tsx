@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
 import Btn from '../../components/Button';
 import TitleWithUnderline from '../../components/titleWithUnderline';
 import ParagraphDescription from '../../components/paragraphDescription';

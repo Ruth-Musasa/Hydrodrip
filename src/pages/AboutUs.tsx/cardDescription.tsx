@@ -25,7 +25,7 @@ const CardDescription: React.FC<Props> = ({
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }} ></div>
-                <img src="src/assets/img/Triangle.png" className='w-1/2 absolute -top-20  md:-top-40 2xl:-top-60' alt="" />
+                <img src="public/img/Triangle.png" className='w-1/2 absolute -top-20  md:-top-40 2xl:-top-60' alt="" />
             </div>
             <div className="w-full lg:w-1/2 m-auto pt-10">
                 <TitleWithUnderline title={title} classe="items-start" />

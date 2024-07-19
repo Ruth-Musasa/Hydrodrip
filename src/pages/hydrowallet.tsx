@@ -27,7 +27,7 @@ export default function Hydrowallet() {
                             <p className="font-semibold m-auto text-lg pb-10">Intuitive water management directly from your device.</p>
                             <Link to="/">  <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} >Download Now</Btn></Link>
                         </div>
-                        <img src="src/assets/img/2-removebg 4.png" alt="" />
+                        <img src="public/img/2-removebg 4.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -62,30 +62,30 @@ export default function Hydrowallet() {
                     </div>
                 </div>
                 <Divider />
-                <CardDescription bgColor="bg-secondary-300" img="src/assets/img/2-removebg 4.png" btnAction="Download the app" title="Pay Your Subscription and Monitor Your Consumption with One Click"
+                <CardDescription bgColor="bg-secondary-300" img="public/img/2-removebg 4.png" btnAction="Download the app" title="Pay Your Subscription and Monitor Your Consumption with One Click"
                     description="HydroWallet simplifies and enhances water usage management by offering seamless payment options, real-time monitoring, and an intuitive user interface. With just a few clicks, users can manage their water subscription payments and avoid late fees. The app provides real-time data on water usage, helping users identify areas to save water and reduce costs. Its user-friendly design ensures easy access to all features, while notifications and alerts keep users informed about payment status and any unusual consumption patterns. Advanced security measures protect personal and payment information, giving users peace of mind." />
                 <Divider />
-                <CardWithIcon img="src/assets/img/Image7.png">
+                <CardWithIcon img="public/img/Image7.png">
                     <TitleWithUnderline title="Benefits" classe="items-start" />
                     <ParagraphDescription
                         sections={[
                             {
                                 title: "Enhanced control",
-                                img: "../src/assets/img/Icon 5.png",
+                                img: "../public/img/Icon 5.png",
                                 paragraphs: [
                                     "Users can monitor and adjust their consumption in real time.",
                                 ]
                             },
                             {
                                 title: "Incentivize conservation",
-                                img: "../src/assets/img/Icon 2.png",
+                                img: "../public/img/Icon 2.png",
                                 paragraphs: [
                                     "Encourage responsible water usage through rewards.",
                                 ]
                             },
                             {
                                 title: "Boost sustainability:",
-                                img: "../src/assets/img/facile 3.png",
+                                img: "../public/img/facile 3.png",
                                 paragraphs: [
                                     "Supports environmental conservation efforts.",
                                 ]
@@ -98,9 +98,9 @@ export default function Hydrowallet() {
                     <TitleWithUnderline title="Feature Highlights" classe="items-center" />
                     <p className="text-center mb-10">All You Need for Smarter Water Management</p>
                     <div className="grid md:grid-cols-3 gap-10 2xl:gap-16">
-                        <HighlightsCard bgcolor="bg-primary-500" img="src/assets/img/Rectangle 594 .png" description="Real-Time Monitoring"/>
-                        <HighlightsCard bgcolor="bg-zinc-500" img="src/assets/img/Rectangle 594.png" description="Automated Payments"/>
-                        <HighlightsCard bgcolor="bg-secondary-500" img="src/assets/img/Rectangle 594 (1).png" description="Rewards Program"/>
+                        <HighlightsCard bgcolor="bg-primary-500" img="public/img/Rectangle 594 .png" description="Real-Time Monitoring"/>
+                        <HighlightsCard bgcolor="bg-zinc-500" img="public/img/Rectangle 594.png" description="Automated Payments"/>
+                        <HighlightsCard bgcolor="bg-secondary-500" img="public/img/Rectangle 594 (1).png" description="Rewards Program"/>
                     </div>
                 </div>
                 <div className="bg-zinc-100">

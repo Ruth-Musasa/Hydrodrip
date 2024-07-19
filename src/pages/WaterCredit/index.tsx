@@ -22,7 +22,7 @@ export default function WaterCredit() {
                             <h1 className="text-3xl lg:text-5xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Drive sustainability while achieving economic benefits.</p>
                         </div>
-                        <img src="src/assets/img/2-removebg 3.png" alt="" />
+                        <img src="public/img/2-removebg 3.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ export default function WaterCredit() {
                     </div>
                 </div>
                 <div className="bg-gray-100 relative flex flex-col md:flex-row relative md:mt-40 h-[520px] ">
-                    <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 md:w-4/12  rotate-180 invisible md:visible " />
+                    <img src="public/img/Rectangle 588.png" alt="" className="w-0 md:w-4/12  rotate-180 invisible md:visible " />
                     <div className="m-auto py-8 text-center ">
                         <video
                             className="w-full md:w-2/4 md:inset-x-1/4 md:-top-40 md:h-[495px] md:absolute"
@@ -74,7 +74,7 @@ export default function WaterCredit() {
                             </div>
                         </div>
                     </div>
-                    <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
+                    <img src="public/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
                 </div>
                 <div className=" lg:w-10/12 m-auto">
                     <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
@@ -82,17 +82,17 @@ export default function WaterCredit() {
                         <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
                         <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
                             <IconTitleParagraph
-                                image="../src/assets/img/Icon 14.png"
+                                image="../public/img/Icon 14.png"
                                 title="For Consumers"
                                 description="Reduced water bills and rewards for sustainable practices."
                             />
                             <IconTitleParagraph
-                                image="../src/assets/img/Icon 1 (1)4.png"
+                                image="../public/img/Icon 1 (1)4.png"
                                 title="For Communities"
                                 description="Funding for new water infrastructure projects."
                             />
                             <IconTitleParagraph
-                                image="../src/assets/img/Icon 1 (2)4.png"
+                                image="../public/img/Icon 1 (2)4.png"
                                 title=" For Industries"
                                 description="Offset water consumption and improve ESG scores."
                             />
@@ -100,20 +100,20 @@ export default function WaterCredit() {
                     </div>
                 </div>
                 <div className="bg-primary-100">
-                    <CardWithIcon img="src/assets/img/Images.png">
+                    <CardWithIcon img="public/img/Images.png">
                         <TitleWithUnderline title="Water Credit Marketplace" classe="items-start" />
                         <ParagraphDescription
                             sections={[
                                 {
                                     title: "Descriptions",
-                                    img: "src/assets/img/List.png",
+                                    img: "public/img/List.png",
                                     paragraphs: [
                                         "A platform for trading water credits, promoting economic incentives for water conservation.",
                                     ]
                                 },
                                 {
                                     title: "How to participe",
-                                    img: "src/assets/img/List.png",
+                                    img: "public/img/List.png",
                                     paragraphs: [
                                         "Steps for individuals, communities, and businesses to get involved.",
                                     ]

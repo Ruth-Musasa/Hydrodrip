@@ -18,7 +18,7 @@ export default function Projects() {
                 <ProjectsCard
                     title="University of Johannesburg Pilot"
                     btnAction="Explore more"
-                    imageUrl="../src/assets/img/Rectangle 584.png"
+                    imageUrl="../public/img/Rectangle 584.png"
                     sections={[
                         {
                             title: "Overview",
@@ -44,7 +44,7 @@ export default function Projects() {
                 <ProjectsCard
                     title="Community Water Conservation Initiatives"
                     btnAction="Explore more"
-                    imageUrl="src/assets/img/Rectangle 500.png"
+                    imageUrl="public/img/Rectangle 500.png"
                     sections={[
                         {
                             title: "Overview",
