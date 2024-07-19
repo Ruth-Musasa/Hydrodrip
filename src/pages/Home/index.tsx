@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa";
 import Btn from "../../components/Button";
 import NavBar from "../../components/NavBar";
 import UserTestimonials from "./userTestimonial";
