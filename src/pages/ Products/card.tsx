@@ -27,13 +27,13 @@ const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descripti
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 w-11/12 lg:w-10/12 m-auto">
                 <div className="flex gap-20 w-full ">
                     <div className={`${bgColor} w-auto h-64 lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
-                        <div className='w-auto h-full img-div' style={{
+                        <div className='w-auto h-full img-div bg-no-repeat' style={{
                             backgroundImage: `url("${imageUrl}")`,
                             backgroundSize: 'cover',
-                            backgroundPosition: 'center',
+                            backgroundPosition: 'top',
                         }} ></div>
                     </div>
-                    <div className="w-full md:w-1/2 md:pl-8 space-y-2">
+                    <div className="w-full md:w-1/2 md:pl-8 space-y-2 my-auto">
                         <h3 className='text-primary-900 text-2xl font-bold'>{descriptionTitle} </h3>
                         <p>{description} </p>
                         <h3 className='text-primary-900 text-2xl font-bold pt-6'>Features </h3>

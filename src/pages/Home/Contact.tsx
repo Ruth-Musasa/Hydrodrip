@@ -6,9 +6,13 @@ import { FaMailBulk, FaPhone } from 'react-icons/fa';
 
 interface Props {
     bgColor?: string;
+    titleDescription?: string;
+    description?: string;
 }
 
-const Contact: React.FC<Props> = ({ bgColor }) => {
+const Contact: React.FC<Props> = ({ bgColor,
+    titleDescription = "Let's Talk",
+    description = "Do you have an innovative idea or a bold water management project in mind? We’re here to help. Reach out to us – we would love to hear about your initiative and assist you in bringing it to life. Together, let’s drive forward the innovation in water management." }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -37,8 +41,8 @@ const Contact: React.FC<Props> = ({ bgColor }) => {
             <div className="flex flex-col md:flex-row md:p-8 lg:w-10/12 m-auto ">
                 <div className="md:w-2/3 p-4 space-y-10">
                     <div>
-                        <h3 className="text-2xl font-bold mb-2 text-primary-900">Let's Talk</h3>
-                        <p className='md:w-2/3'>Do you have an innovative idea or a bold water management project in mind? We’re here to help. Reach out to us – we would love to hear about your initiative and assist you in bringing it to life. Together, let’s drive forward the innovation in water management.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-primary-900">{titleDescription} </h3>
+                        <p className='md:w-2/3'>{description} </p>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>

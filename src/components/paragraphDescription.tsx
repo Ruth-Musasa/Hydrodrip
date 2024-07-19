@@ -16,7 +16,7 @@ const ParagraphDescription: React.FC<Props> = ({ sections}) => {
             {
                 sections.map((section, index) => (
                     <div key={index}>
-                        <div className="mb-2 flex items-center gap-10">
+                        <div className="pb-6 flex items-center gap-10">
                             {section.icon ? <FaArrowRight className="inline mr-2 text-primary-300" /> : null}
                             {section.img ? <img src={section.img} alt="image icon" className='w-16 items-center' /> : null}
                             {section.paragraphs.map((paragraph, pIndex) => (

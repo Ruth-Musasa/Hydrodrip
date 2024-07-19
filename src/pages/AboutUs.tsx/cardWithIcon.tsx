@@ -8,7 +8,7 @@ interface Props {
 const CardWithIcon: React.FC<Props> = ({ img, children }) => {
     return (
         <div className="w-11/12 m-auto">
-            <div className="py-16 h-auto">
+            <div className=" h-auto">
                 <div className="w-11/12  m-auto flex flex-col lg:flex-row gap-8 2xl:gap-32">
                     <div className=" space-y-10 w-full md:w-10/12 bottom-0 left-0 m-auto">
                         <div>

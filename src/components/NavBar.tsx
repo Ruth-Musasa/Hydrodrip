@@ -24,7 +24,7 @@ export default function NavBar() {
                     <nav className="flex gap-8 items-center font-bold text-primary-900">
                         <Link to="/" className=" hover:text-primary-500">Home</Link>
                         <Link to="/products" className=" hover:text-primary-500">Products</Link>
-                        <Link to="/projects" className=" hover:text-primary-500">Projets</Link>
+                        <Link to="/projects" className=" hover:text-primary-500">Projects</Link>
                         <Link to="/water-credit" className=" hover:text-primary-500">Water Credit</Link>
                         <Link to="/about-us" className=" hover:text-primary-500">About Us</Link>
                     </nav>
@@ -38,11 +38,11 @@ export default function NavBar() {
                     <nav className="flex flex-col items-center gap-4 font-bold text-primary-900">
                         <Link to="/" className="hover:text-primary-500" onClick={toggleMenu}>Home</Link>
                         <Link to="/products" className="hover:text-primary-500" onClick={toggleMenu}>Products</Link>
-                        <Link to="/projects" className="hover:text-primary-500" onClick={toggleMenu}>Projets</Link>
+                        <Link to="/projects" className="hover:text-primary-500" onClick={toggleMenu}>Projects</Link>
                         <Link to="/water-credit" className="hover:text-primary-500" onClick={toggleMenu}>Water Credit</Link>
                         <Link to="/about-us" className="hover:text-primary-500" onClick={toggleMenu}>About Us</Link>
                         <Link to="/contact-us" onClick={toggleMenu}>
-                            <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false}  >Contact Us</Btn>
+                            <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false}>Contact Us</Btn>
                         </Link>
                     </nav>
                 </div>

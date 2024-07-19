@@ -61,7 +61,7 @@ export default function Projects() {
                         {
                             title: "Outcomes",
                             paragraphs: [
-                                "Marked improvements in water conservation, community engagement in sustainable practices.t",
+                                "Marked improvements in water conservation, community engagement in sustainable practices.",
                             ]
                         }
                     ]}

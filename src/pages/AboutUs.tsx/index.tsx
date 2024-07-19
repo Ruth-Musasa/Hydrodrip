@@ -52,6 +52,7 @@ export default function AboutUs() {
                         ]}
                     />
                 </CardWithIcon>
+                <div className="pt-20"></div>
                 <Divider />
                 <CardPhoto img="src/assets/img/Rectangle 5.png">
                     <TitleWithUnderline title="Our services" classe="items-start" />

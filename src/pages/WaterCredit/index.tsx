@@ -6,9 +6,10 @@ import Btn from "../../components/Button";
 import UserTestimonials from "../Home/userTestimonial";
 import Contact from "../Home/Contact";
 import FAQs from "../Home/faqs";
-import { IoMdSpeedometer } from "react-icons/io";
 import { Link } from "react-router-dom";
 import CardWithIcon from "../AboutUs.tsx/cardWithIcon";
+import { TbReport, TbReportSearch } from "react-icons/tb";
+import { GiSpeedometer } from "react-icons/gi";
 
 export default function WaterCredit() {
     return (
@@ -28,26 +29,26 @@ export default function WaterCredit() {
             <section >
                 <div className="py-32">
                     <TitleWithUnderline title="How it work" classe="items-center" />
-                    <p className="md:w-1/3 m-auto text-center">HydroWallet is a digital wallet designed for water management. It assists water companies in efficiently scaling their water distribution.</p>
+                    <p className="md:w-1/3 m-auto text-center py-5">HydroWallet is a digital wallet designed for water management. It assists water companies in efficiently scaling their water distribution.</p>
                     <div className="relative flex flex-col md:flex-row gap-10 w-9/12 m-auto justify-evenly">
                         <IconTitleParagraph
-                            icon={() => <IoMdSpeedometer className="text-5xl font-bold text-primary-500 " />}
+                            icon={() => <GiSpeedometer className="text-5xl font-bold text-primary-500 " />}
                             title="Measurement"
                             description="Track Your Water Usage with Precision."
                             bgColor="bg-primary-100 w-32 h-32"
                             iconColor="text-white"
                         />
-                        <div className="hidden md:block absolute w-1/5 left-1/4 top-1/3  border-t-2 border-dotted border-secondary-300 m-auto" />
+                        <div className="hidden md:block w-1/4 border-t-2 border-dashed border-secondary-300 mt-20" />
                         <IconTitleParagraph
-                            icon={() => <IoMdSpeedometer className="text-5xl font-bold text-primary-500 " />}
+                            icon={() => <TbReport className="text-5xl font-bold text-primary-500 " />}
                             title="Reporting"
                             description="Report and Analyze to Optimize."
                             bgColor="bg-primary-100 w-32 h-32"
                             iconColor="text-white"
                         />
-                        <div className="hidden md:block absolute w-1/5 right-1/4 top-1/3 border-t-2 border-dotted border-secondary-300  m-auto" />
+                        <div className="hidden md:block  w-1/4  border-t-2 border-dashed border-secondary-300 mt-20" />
                         <IconTitleParagraph
-                            icon={() => <IoMdSpeedometer className="text-5xl font-bold text-primary-500 " />}
+                            icon={() => <TbReportSearch className="text-5xl font-bold text-primary-500 " />}
                             title="Verification"
                             description="Ensure Accuracy with Secure Verification."
                             bgColor="bg-primary-100 w-32 h-32"
@@ -75,28 +76,27 @@ export default function WaterCredit() {
                     </div>
                     <img src="src/assets/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
                 </div>
-                <div className="py-20 lg:w-10/12 m-auto">
+                <div className=" lg:w-10/12 m-auto">
                     <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
                         <TitleWithUnderline title="Benefits of Water Credits" classe="items-center" />
                         <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
                         <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
                             <IconTitleParagraph
-                                image="src/assets/img/Icon 1.png"
-                                title="Smart Water Meters"
-                                description="Accurate and precise monitoring of water usage in real-time"
+                                image="../src/assets/img/Icon 14.png"
+                                title="For Consumers"
+                                description="Reduced water bills and rewards for sustainable practices."
                             />
                             <IconTitleParagraph
-                                image="src/assets/img/Icon 1 (1).png"
-                                title="HydroWallet"
-                                description="Incentivizing water conservation with water credits"
+                                image="../src/assets/img/Icon 1 (1)4.png"
+                                title="For Communities"
+                                description="Funding for new water infrastructure projects."
                             />
                             <IconTitleParagraph
-                                image="src/assets/img/Icon 1 (2).png"
-                                title="Community Impact"
-                                description="Empowering communities through sustainable"
+                                image="../src/assets/img/Icon 1 (2)4.png"
+                                title=" For Industries"
+                                description="Offset water consumption and improve ESG scores."
                             />
                         </div>
-                        <Link to="/products"> <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Learn more</Btn></Link>
                     </div>
                 </div>
                 <div className="bg-primary-100">
@@ -125,7 +125,7 @@ export default function WaterCredit() {
                 </div>
                 <UserTestimonials />
                 <FAQs />
-                <Contact bgColor="bg-primary-100" />
+                <Contact description="Ready to Transform Your Water Management?" bgColor="bg-primary-100" />
             </section>
         </section>
 

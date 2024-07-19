@@ -14,94 +14,97 @@ export default function Product() {
             <section className="bg-white ">
                 <Card
                     title="Smart Water Meters"
-                    btnAction="Read more"
+                    btnAction="Learn more"
                     to="/smart-water-metter"
-                    imageUrl="src/assets/img/Image.png"
+                    imageUrl="../src/assets/img/2-removebg 2.png"
+                    bgColor="bg-primary-800"
                     descriptionTitle="Description"
                     description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
                     sections={[
                         {
-                            title: "Section 1",
+                            title: "Real-time data",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 1.",
+                                "Immediate insights into water consumption patterns.",
                             ]
                         },
                         {
-                            title: "Section 2",
+                            title: "High accuracy",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 2.",
+                                "Ensure precise measurements for billing and monitoring.",
                             ]
                         },
                         {
-                            title: "Section 2",
+                            title: "Easy integration",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 2.",
+                                "Compatible with existing water supply systems.",
                             ]
                         }
                     ]}
                 />
                 <Divider />
                 <Card
-                    title="Smart Water Meters"
-                    btnAction="Read more"
+                    title="Hydrowallet"
+                    btnAction="Learn more"
                     to="/hydrowallet"
-                    imageUrl="src/assets/img/Image (1).png"
+                    imageUrl="../src/assets/img/2-removebg 4.png"
+                    bgColor="bg-secondary-300"
                     descriptionTitle="Description"
-                    description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
+                    description="Our innovative HydroWallet platform automates water credit transactions, empowering users to manage their water consumption more effectively."
                     sections={[
                         {
-                            title: "Section 1",
+                            title: "Mobile tracking",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 1.",
+                                "Monitor your water usage on-the-go.",
                             ]
                         },
                         {
-                            title: "Section 2",
+                            title: "Water credits",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 2.",
+                                "Earn credits for reduced consumption.",
                             ]
                         },
                         {
-                            title: "Section 2",
+                            title: "Blockchain verification",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 2.",
+                                "Secure and transparent transactions.",
                             ]
                         }
                     ]}
                 />
                 <Divider />
                 <Card
-                    title="Smart Water Meters"
-                    btnAction="Read more"
+                    title="Water Credit Model"
+                    btnAction="Learn more"
                     to="/water-credit"
                     imageUrl="src/assets/img/Image (2).png"
+                    bgColor="bg-zinc-100"
                     descriptionTitle="Description"
-                    description="Utilize state-of-the-art technology to monitor and manage water usage with precision. Our smart water meters are designed for reliability and seamless integration with existing systems."
+                    description="Our Water Credit Model introduces a transformative approach to water management, allowing users and businesses to trade water credits for conserving water"
                     sections={[
                         {
-                            title: "Section 1",
+                            title: "Trading platform",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 1.",
+                                "A robust marketplace for buying and selling water credits.",
                             ]
                         },
                         {
-                            title: "Section 2",
+                            title: "Community benefits",
                             icon:true,
                             paragraphs: [
-                                "Premier paragraphe de la section 2.",
+                                "Supports local water conservation initiatives.",
                             ]
                         },
                     ]}
                 />
             </section>
-            <Contact bgColor="bg-primary-100" />
+            <Contact titleDescription="Get in Touch" description="We're eager to hear from you. Whether you have a question or need assistance, our team is ready to help." bgColor="bg-primary-100" />
         </div>
     )
 }

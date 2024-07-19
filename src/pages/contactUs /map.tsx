@@ -9,7 +9,7 @@ const center = {
 
 function Map() {
   return (
-    <MapContainer center={center} zoom={15} style={{ width: '100%', height: '800px' }}>
+    <MapContainer center={center} zoom={15} style={{ width: '100%', height: '750px' }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
