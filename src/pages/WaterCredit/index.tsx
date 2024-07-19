@@ -22,7 +22,7 @@ export default function WaterCredit() {
                             <h1 className="text-3xl lg:text-5xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Drive sustainability while achieving economic benefits.</p>
                         </div>
-                        <img src="public/img/2-removebg 3.png" alt="" />
+                        <img src="../img/2-removebg 3.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ export default function WaterCredit() {
                     </div>
                 </div>
                 <div className="bg-gray-100 relative flex flex-col md:flex-row relative md:mt-40 h-[520px] ">
-                    <img src="public/img/Rectangle 588.png" alt="" className="w-0 md:w-4/12  rotate-180 invisible md:visible " />
+                    <img src="../img/Rectangle 588.png" alt="" className="w-0 md:w-4/12  rotate-180 invisible md:visible " />
                     <div className="m-auto py-8 text-center ">
                         <video
                             className="w-full md:w-2/4 md:inset-x-1/4 md:-top-40 md:h-[495px] md:absolute"
@@ -74,7 +74,7 @@ export default function WaterCredit() {
                             </div>
                         </div>
                     </div>
-                    <img src="public/img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
+                    <img src="../img/Rectangle 588.png" alt="" className="w-0 invisible md:visible md:w-4/12  " />
                 </div>
                 <div className=" lg:w-10/12 m-auto">
                     <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
@@ -100,20 +100,20 @@ export default function WaterCredit() {
                     </div>
                 </div>
                 <div className="bg-primary-100">
-                    <CardWithIcon img="public/img/Images.png">
+                    <CardWithIcon img="../img/Images.png">
                         <TitleWithUnderline title="Water Credit Marketplace" classe="items-start" />
                         <ParagraphDescription
                             sections={[
                                 {
                                     title: "Descriptions",
-                                    img: "public/img/List.png",
+                                    img: "../img/List.png",
                                     paragraphs: [
                                         "A platform for trading water credits, promoting economic incentives for water conservation.",
                                     ]
                                 },
                                 {
                                     title: "How to participe",
-                                    img: "public/img/List.png",
+                                    img: "../img/List.png",
                                     paragraphs: [
                                         "Steps for individuals, communities, and businesses to get involved.",
                                     ]

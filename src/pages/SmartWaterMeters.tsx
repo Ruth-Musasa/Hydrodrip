@@ -20,7 +20,7 @@ export default function SmartWaterMetter() {
                             <h1 className="text-4xl lg:text-5xl font-bold m-auto ">Optimize Your Water Usage with <span className="text-secondary-300"> Smart Water Meters</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Empowering you with real-time monitoring and complete control over your water consumption.                    </p>
                         </div>
-                        <img src="public/img/2-removebg 2.png" alt="" />
+                        <img src="../img/2-removebg 2.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -36,21 +36,21 @@ export default function SmartWaterMetter() {
                                 sections={[
                                     {
                                         title: "Real-Time Monitoring",
-                                        img: "public/img/List.png",
+                                        img: "../img/List.png",
                                         paragraphs: [
                                             "Track water usage dynamically to detect leaks and patterns, ensuring optimal water management.",
                                         ]
                                     },
                                     {
                                         title: "Accurate Data",
-                                        img: "public/img/List.png",
+                                        img: "../img/List.png",
                                         paragraphs: [
                                             "Receive data you can trust with our high-precision meters that ensure billing accuracy and water usage transparency.",
                                         ]
                                     },
                                     {
                                         title: "Alerts and Notifications",
-                                        img: "public/img/List.png",
+                                        img: "../img/List.png",
                                         paragraphs: [
                                             "Stay informed with instant alerts on leaks, potential over-usage, or system malfunctions to promptly address any issues.",
                                         ]

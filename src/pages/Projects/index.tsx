@@ -44,7 +44,7 @@ export default function Projects() {
                 <ProjectsCard
                     title="Community Water Conservation Initiatives"
                     btnAction="Explore more"
-                    imageUrl="public/img/Rectangle 500.png"
+                    imageUrl="../img/Rectangle 500.png"
                     sections={[
                         {
                             title: "Overview",
