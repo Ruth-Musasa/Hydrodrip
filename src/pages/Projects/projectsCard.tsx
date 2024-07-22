@@ -16,7 +16,7 @@ interface Props {
 const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction }) => {
     return (
         <div>
-            <div className='py-14'>
+            <div className='md:py-14'>
                 <TitleWithUnderline title={`${title} `} classe="items-center" />
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 md:w-10/12 md:m-auto">
                     <div className="w-full md:w-5/12">

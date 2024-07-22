@@ -67,7 +67,7 @@ export default function Projects() {
                     ]}
                 />
             </section>
-            <div className="bg-zinc-100 py-32 space-y-16">
+            <div className="bg-zinc-100 py-10 md:py-32 space-y-16">
                 <TitleWithUnderline title="Galery" classe="text-center items-center" />
                 <Carousel />
             </div>

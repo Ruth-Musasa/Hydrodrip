@@ -48,7 +48,7 @@ const FAQ: React.FC = () => {
                     <p className="font-semibold md:w-1/3 m-auto text-lg ">Advanced solutions for efficient water management</p>
                 </div>
             </div>
-            <div className="w-4/5 mx-auto p-6 ">
+            <div className="md:w-4/5 mx-auto p-6 ">
                 <TitleWithUnderline title="Have questions ?" classe="items-center" />
                 <p className='text-center text-xl pb-10 font-bold text-primary-900'>Find answers to frequently asked questions about installation, usage, and benefits.</p>
                 {faqData.map((item, index) => (

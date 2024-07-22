@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <section>
         <div className="w-11/12 lg:w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-16">
-          <img src="../img/Section 1-image.png" className="w-full md:w-1/2" alt="" />
+          <img src="../img/Section 1-image.png" className="w-full md:w-1/2 " alt="" />
           <div className="m-auto space-y-10 w-full md:w-1/2">
             <TitleWithUnderline title="Who are you" classe="items-start" />
             <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
@@ -63,8 +63,8 @@ export default function Home() {
           </div>
         </div>
         <Divider />
-        <div className="md:pb-10 lg:py-20 md:w-10/12 m-auto">
-          <TitleWithUnderline title="Why choose our services" classe="items-center" />
+        <div className="pb-10 lg:py-20 md:w-10/12 m-auto">
+          <TitleWithUnderline title="Why choose our services" classe="text-center items-center" />
           <p className="w-full md:w-2/3 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
           <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
             <IconTitleParagraph
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div className="bg-primary-300 py-20">
           <div className="grid md:grid-cols-2 w-10/12 m-auto lg:gap-20">
-            <div className="m-auto w-3/4">
+            <div className="m-auto md:w-3/4">
               <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white text-center lg:leading-normal ">Trust our quality technicians buy now a Smart Water Meters            </h2>
               <Link to="/contact-us" > <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         </div>
         <div className="py-28 space-y-10 " >
-          <TitleWithUnderline title="Join millions of users today" classe="items-center" />
+          <TitleWithUnderline title="Join millions of users today" classe="text-center items-center" />
           <h3 className="text-center text-primary-500 font-bold text-3xl">Ready to Take Control of Your Water Usage?</h3>
           <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Dowload Now</Btn>
         </div>

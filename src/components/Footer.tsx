@@ -1,6 +1,7 @@
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
- 
+import SocialMedia from "./socialMedia";
+
 
 const Footer = () => {
   return (
@@ -10,12 +11,7 @@ const Footer = () => {
           <img src="/logo.png" alt="logo" />
           <p>
             Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.          </p>
-          <div className="flex gap-4">
-            <FaFacebook className="text-white bg-blue-500 rounded-full p-2" size={30} />
-            <FaTwitter className="text-white bg-blue-500 rounded-full p-2" size={30} />
-            <FaYoutube className="text-white bg-blue-500 rounded-full p-2" size={30} />
-            <FaLinkedin className="text-white bg-blue-500 rounded-full p-2" size={30} />
-          </div>
+          <SocialMedia />
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 md:w-3/5">
           <div className="flex flex-col gap-5 md:w-1/3 ">

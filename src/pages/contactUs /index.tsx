@@ -17,7 +17,7 @@ export default function ContactUs() {
                     <p className="font-semibold md:w-1/3 m-auto text-lg ">Advanced solutions for efficient water management</p>
                 </div>
             </div>
-            <div className="py-20 mb-10">
+            <div className="pt-10 md:py-20 md:mb-10">
                 <TitleWithUnderline title="Write a message to Hydrodrip" classe="items-center" />
                 <Form />
                 <Divider />
