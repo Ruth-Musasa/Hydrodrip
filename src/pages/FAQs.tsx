@@ -52,13 +52,13 @@ const FAQ: React.FC = () => {
                 <TitleWithUnderline title="Have questions ?" classe="items-center" />
                 <p className='text-center text-xl pb-10 font-bold text-primary-900'>Find answers to frequently asked questions about installation, usage, and benefits.</p>
                 {faqData.map((item, index) => (
-                    <div key={index} className="mb-4">
+                    <div key={index} className="pb-4">
                         <button
-                            className="flex justify-between w-full px-10 py-4 text-left text-lg font-medium text-white bg-primary-800 rounded-md hover:bg-primary-950 focus:outline-none"
+                            className="flex justify-between w-full px-4 md:px-10 py-4 text-left text-lg font-medium text-white bg-primary-800 rounded-md hover:bg-primary-950 focus:outline-none"
                             onClick={() => handleToggle(index)}
                         >
                             {item.question}
-                            <FaArrowDown />
+                            <FaArrowDown className='my-auto'/>
                         </button>
                         {openIndex === index && (
                             <div className="mt-2 p-4 bg-zinc-100">

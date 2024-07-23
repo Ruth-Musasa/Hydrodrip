@@ -34,7 +34,7 @@ const DynamicNumber: React.FC = () => {
     ];
 
     return (
-        <div className="bg-primary-800 py-28 space-y-10 lg:space-y-20">
+        <div className="bg-primary-800 py-14 md:py-28 space-y-10 lg:space-y-20">
             <h2 className="text-3xl lg:text-4xl font-bold  text-white text-center">Hydrodrip in numbers</h2>
             <div className="flex flex-wrap justify-center md:gap-8 p-8">
                 {stats.map((stat, index) => (

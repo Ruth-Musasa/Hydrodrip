@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import Btn from './Button';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { IoMdClose } from 'react-icons/io';
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function NavBar() {
 
     const handleLinkClick = (path: string) => {
         setActiveLink(path);
-        setIsOpen(false); 
+        setIsOpen(false);
     };
 
     const getLinkClassName = (path: string) => {
@@ -24,10 +25,11 @@ export default function NavBar() {
     return (
         <div className="relative z-10">
             <header className="flex justify-between items-center w-10/12 m-auto ">
-                <img src="/logo.png" alt="logo" />
+                <img src="/logo.png" alt="logo" className='hidden lg:flex '/>
+                <img src="/logo-removebg-preview.png" alt="logo" className='lg:hidden flex '/>
                 <div className="flex lg:hidden">
                     <button onClick={toggleMenu}>
-                        {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+                        {isOpen ? <IoMdClose size={30} /> : <AiOutlineMenu size={30} />}
                     </button>
                 </div>
                 <div className={`hidden lg:flex gap-10 items-center`}>
@@ -44,8 +46,9 @@ export default function NavBar() {
                 </div>
             </header>
             {isOpen && (
-                <div className="lg:hidden  text-primary-900 p-4 ">
-                    <nav className="flex flex-col items-center gap-4 font-bold">
+                <div className="lg:hidden fixed top-0 z-50 h-screen bg-white w-2/3 text-primary-900 pl-10 pt-6 space-y-10 opacity-95 ">
+                    <img src="/logo.png" alt="logo" />
+                    <nav className="flex flex-col  gap-5 font-bold">
                         <Link to="/" className={`${getLinkClassName('/')} hover:text-primary-500`} onClick={() => handleLinkClick('/')}>Home</Link>
                         <Link to="/products" className={`${getLinkClassName('/products')} hover:text-primary-500`} onClick={() => handleLinkClick('/products')}>Products</Link>
                         <Link to="/projects" className={`${getLinkClassName('/projects')} hover:text-primary-500`} onClick={() => handleLinkClick('/projects')}>Projects</Link>

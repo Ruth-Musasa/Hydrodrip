@@ -36,7 +36,7 @@ const Contact: React.FC<Props> = ({ bgColor,
     };
 
     return (
-        <div className={`${bgColor} py-20`}>
+        <div className={`${bgColor} py-14`}>
             <TitleWithUnderline title="Contact Us" classe="items-center" />
             <div className="flex flex-col md:flex-row md:p-8 lg:w-10/12 m-auto ">
                 <div className="md:w-2/3 p-4 space-y-10">
