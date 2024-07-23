@@ -6,10 +6,12 @@ import Card from "./card";
 export default function Product() {
     return (
         <div>
-            <NavBar />
+            <div className="sticky w-full bg-white top-0 z-10">
+                <NavBar />
+            </div>
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                 <h1 className="text-5xl font-bold m-auto ">Our Innovative Products</h1>
-                <p className="font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
+                <p className="w-10/12 font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
             </div>
             <section className="bg-white ">
                 <Card
@@ -23,21 +25,21 @@ export default function Product() {
                     sections={[
                         {
                             title: "Real-time data",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Immediate insights into water consumption patterns.",
                             ]
                         },
                         {
                             title: "High accuracy",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Ensure precise measurements for billing and monitoring.",
                             ]
                         },
                         {
                             title: "Easy integration",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Compatible with existing water supply systems.",
                             ]
@@ -56,21 +58,21 @@ export default function Product() {
                     sections={[
                         {
                             title: "Mobile tracking",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Monitor your water usage on-the-go.",
                             ]
                         },
                         {
                             title: "Water credits",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Earn credits for reduced consumption.",
                             ]
                         },
                         {
                             title: "Blockchain verification",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Secure and transparent transactions.",
                             ]
@@ -89,14 +91,14 @@ export default function Product() {
                     sections={[
                         {
                             title: "Trading platform",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "A robust marketplace for buying and selling water credits.",
                             ]
                         },
                         {
                             title: "Community benefits",
-                            icon:true,
+                            icon: true,
                             paragraphs: [
                                 "Supports local water conservation initiatives.",
                             ]

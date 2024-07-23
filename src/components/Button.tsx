@@ -23,7 +23,7 @@ const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon, cl
     const sizeStyles = {
         small: 'px-2 py-1 text-sm',
         medium: 'px-4 py-2 text-base',
-        large: 'px-6 py-3 text-lg',
+        large: 'px-4 py-2 text-base md:px-6 md:py-3 md:text-lg ',
     };
 
     const styleStyles = {

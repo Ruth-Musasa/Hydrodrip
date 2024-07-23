@@ -23,7 +23,7 @@ export default function NavBar() {
 
     return (
         <div className="relative z-10">
-            <header className="flex justify-between items-center w-10/12 m-auto">
+            <header className="flex justify-between items-center w-10/12 m-auto ">
                 <img src="/logo.png" alt="logo" />
                 <div className="flex lg:hidden">
                     <button onClick={toggleMenu}>
@@ -44,7 +44,7 @@ export default function NavBar() {
                 </div>
             </header>
             {isOpen && (
-                <div className="lg:hidden w-full bg-white text-primary-900 p-4">
+                <div className="lg:hidden  text-primary-900 p-4 ">
                     <nav className="flex flex-col items-center gap-4 font-bold">
                         <Link to="/" className={`${getLinkClassName('/')} hover:text-primary-500`} onClick={() => handleLinkClick('/')}>Home</Link>
                         <Link to="/products" className={`${getLinkClassName('/products')} hover:text-primary-500`} onClick={() => handleLinkClick('/products')}>Products</Link>

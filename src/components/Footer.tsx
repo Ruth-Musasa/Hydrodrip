@@ -1,4 +1,3 @@
-import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SocialMedia from "./socialMedia";
 
@@ -6,11 +5,12 @@ import SocialMedia from "./socialMedia";
 const Footer = () => {
   return (
     <footer className="bg-primary-900 text-white py-20 md:py-40">
-      <div className="w-11/12 md:w-10/12 m-auto flex flex-col md:flex-row gap-10 md:gap-20 ">
+      <div className="w-10/12 m-auto flex flex-col md:flex-row gap-10 md:gap-20 ">
         <div className="md:w-2/5 space-y-5">
           <img src="/logo.png" alt="logo" />
           <p>
-            Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.          </p>
+            Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.
+          </p>
           <SocialMedia />
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 md:w-3/5">
