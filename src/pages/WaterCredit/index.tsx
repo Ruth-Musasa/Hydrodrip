@@ -101,7 +101,7 @@ export default function WaterCredit() {
                         </div>
                     </div>
                 </div>
-                <div className="py-10 bg-primary-100">
+                <div className="py-10 md:py-0 bg-primary-100">
                     <CardWithIcon img="../img/Images.png">
                         <TitleWithUnderline title="Water Credit Marketplace" classe="text-center items-center md:items-start" />
                         <ParagraphDescription

@@ -34,7 +34,7 @@ export default function Home() {
           <div className="relative w-full md:w-1/2">
             <div className="mb-0 bg-primary-900 rounded-full w-60 h-60 md:w-96 md:h-96 m-auto md:m-0">
               <img src="../img/Triangle.png" alt="" className="absolute -bottom-2 left-0 w-1/4 md:w-1/4 md:-bottom-0 2xl:w-1/6" />
-              <img src="../img/openart-image_H1J3jG7x_1718278217971_raw-removebg-preview 1.png" className="absolute -right-10 -bottom-10 md:-right-20 md:bottom-0 2xl:-right-0 2xl:-bottom-28" alt="" />
+              <img src="../img/openart-image_H1J3jG7x_1718278217971_raw-removebg-preview 1.png" className="absolute -right-6 -bottom-10 md:-right-20 md:bottom-0 2xl:-right-0 2xl:-bottom-28" alt="" />
             </div>
           </div>
           <div className="m-auto pt-10 space-y-10 w-full md:pt-0 md:w-1/2">

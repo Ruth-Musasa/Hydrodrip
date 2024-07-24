@@ -43,9 +43,9 @@ const FAQ: React.FC = () => {
         <div>
             <div>
                 <NavBar />
-                <div className="text-white text-center  bg-custom-gradient py-60 m-auto space-y-6 clip-mountain">
-                    <h1 className="text-5xl font-bold m-auto ">Contact Us</h1>
-                    <p className="font-semibold md:w-1/3 m-auto text-lg ">Advanced solutions for efficient water management</p>
+                <div className="text-white text-center  bg-custom-gradient py-40 md:py-60 m-auto space-y-6 clip-mountain">
+                    <h1 className="text-5xl font-bold m-auto ">FAQ</h1>
+                    <p className="font-semibold md:w-1/3 m-auto text-lg ">Frequently Asked Questions</p>
                 </div>
             </div>
             <div className="md:w-4/5 mx-auto p-6 ">
