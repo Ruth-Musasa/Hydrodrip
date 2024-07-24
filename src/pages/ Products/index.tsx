@@ -46,7 +46,7 @@ export default function Product() {
                         }
                     ]}
                 />
-                <Divider />
+                <Divider classe='py-0' />
                 <Card
                     title="Hydrowallet"
                     btnAction="Learn more"
@@ -79,7 +79,7 @@ export default function Product() {
                         }
                     ]}
                 />
-                <Divider />
+                <Divider classe="py-0" />
                 <Card
                     title="Water Credit Model"
                     btnAction="Learn more"

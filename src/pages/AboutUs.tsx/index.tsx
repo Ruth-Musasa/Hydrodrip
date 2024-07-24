@@ -14,14 +14,16 @@ export default function AboutUs() {
     return (
         <div>
             <section>
-                <NavBar />
+                <div className="sticky w-full bg-white top-0 z-10">
+                    <NavBar />
+                </div>
                 <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                     <h1 className="text-5xl font-bold m-auto">Presentation of Hydrodrip</h1>
                     <p className="font-semibold m-auto text-lg ">Leading the wave in advanced water management solutions</p>
                 </div>
             </section>
             <section>
-                <CardDescription  img="../img/pexels-photo-7688336.webp"   btnAction="Learn more" title="Hydrodrip: Pioneering Water Management Since 2023" description="Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency." />
+                <CardDescription img="../img/pexels-photo-7688336.webp" btnAction="Learn more" title="Hydrodrip: Pioneering Water Management Since 2023" description="Founded by a diverse team of innovators and environmentalists, Hydrodrip has been at the forefront of addressing global water challenges. Our mission is to empower communities and businesses with state-of-the-art water management technologies that not only conserve water but also pave the way for sustainable development. From inception, Hydrodrip has committed to leveraging smart technology to revolutionize water usage with a focus on sustainability and efficiency." />
                 <Divider />
                 <CardWithIcon img="../img/Image6.png">
                     <TitleWithUnderline title="Our mission" classe="items-start" />

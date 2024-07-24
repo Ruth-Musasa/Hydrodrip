@@ -9,7 +9,9 @@ import ProjectsCard from "./projectsCard";
 export default function Projects() {
     return (
         <div>
-            <NavBar />
+            <div className="sticky w-full bg-white top-0 z-10">
+                <NavBar />
+            </div>
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                 <h1 className="text-5xl font-bold m-auto ">Our Impactful Projects</h1>
                 <p className="font-semibold m-auto text-lg ">Driving sustainable water management through innovative projects</p>
@@ -40,7 +42,7 @@ export default function Projects() {
                         }
                     ]}
                 />
-                <Divider />
+                <Divider classe="pt-0 pb-10 " />
                 <ProjectsCard
                     title="Community Water Conservation Initiatives"
                     btnAction="Explore more"
