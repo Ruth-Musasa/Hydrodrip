@@ -30,12 +30,17 @@ export default function Home() {
         </div>
       </div>
       <section>
-        <div className="w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-14">
-          <img src="../img/Section 1-image.png" className="w-full items-center md:w-1/2 " alt="" />
-          <div className="m-auto space-y-10 w-full md:w-1/2">
+        <div className="w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-14 md:py-20">
+          <div className="relative w-full md:w-1/2">
+            <div className="mb-0 bg-primary-900 rounded-full w-60 h-60 md:w-96 md:h-96 m-auto md:m-0">
+              <img src="../img/Triangle.png" alt="" className="absolute -bottom-2 left-0 w-1/4 md:w-1/4 md:-bottom-0 2xl:w-1/6" />
+              <img src="../img/openart-image_H1J3jG7x_1718278217971_raw-removebg-preview 1.png" className="absolute -right-10 -bottom-10 md:-right-20 md:bottom-0 2xl:-right-0 2xl:-bottom-28" alt="" />
+            </div>
+          </div>
+          <div className="m-auto pt-10 space-y-10 w-full md:pt-0 md:w-1/2">
             <TitleWithUnderline title="Who are you" classe="items-center md:items-start" />
-            <p>At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
-            <p className="border-l-4 border-primary-500 pl-4 font-bold">Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.</p>
+            <p className="text-justify md:text-start">At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
+            <p className="border-l-4 border-primary-500 pl-4 font-bold text-justify  md:text-start">Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.</p>
             <div className="flex gap-6 pb-10">
               <img className="w-[70px] h-[70px] rounded-full object-cover object-center" src="../img/photo3.png" alt="avatar" />
               <div className="px-4 py-2 items-center text-base">
@@ -48,7 +53,7 @@ export default function Home() {
         </div>
         <div className="bg-gray-100 relative flex flex-col md:flex-row">
           <img src="../img/Rectangle 588.png" alt="" className="w-0 md:w-4/12 2xl:w-1/2 rotate-180 invisible md:visible " />
-          <div className="m-auto py-14 text-center">
+          <div className="w-10/12 md:w-full m-auto py-14 text-center">
             <TitleWithUnderline title="Hear From Our Satisfied Users" classe="items-center" />
             <p className="mb-8 ">See HydroWallet in action. Watch our short documentary to see how we’re leading the revolution in water management, promoting sustainability and efficiency across diverse landscapes.</p>
             <div className="object-center">
@@ -60,14 +65,14 @@ export default function Home() {
         <div className="py-14 bg-zinc-200 md:bg-white lg:py-32">
           <div className="w-10/12 m-auto text-center">
             <TitleWithUnderline title="Serving Our Customers" classe="items-center" />
-            <p className="w-full md:w-5/12 m-auto mb-8">Explore our project portfolio to see the tangible impacts of HydroWallet in enhancing water conservation efforts globally. From small communities to large industries, see how our solutions are making a difference.</p>
+            <p className="w-full md:w-6/12 m-auto mb-8">Explore our project portfolio to see the tangible impacts of HydroWallet in enhancing water conservation efforts globally. From small communities to large industries, see how our solutions are making a difference.</p>
             <Link to="/projects">   <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Our projects</Btn></Link>
           </div>
         </div>
         <Divider classe='hidden md:block' />
         <div className="py-14  lg:py-20 md:w-10/12 m-auto">
           <TitleWithUnderline title="Why choose our services" classe="text-center items-center" />
-          <p className="w-10/12  m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
+          <p className="w-10/12 md:w-6/12 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
           <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
             <IconTitleParagraph
               image="../img/Icon 1.png"
