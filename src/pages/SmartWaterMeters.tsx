@@ -12,8 +12,10 @@ import UserTestimonials from "./Home/userTestimonial";
 export default function SmartWaterMetter() {
     return (
         <section>
-            <div>
+            <div className="sticky w-full bg-white top-0 z-40">
                 <NavBar />
+            </div>
+            <div>
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
                     <div className="w-11/12 lg:w-10/12 md:flex m-auto py-10 2xl:py-20 lg:gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">

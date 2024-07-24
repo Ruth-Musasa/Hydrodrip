@@ -25,8 +25,8 @@ export default function NavBar() {
     return (
         <div className="relative z-10">
             <header className="flex justify-between items-center w-10/12 m-auto ">
-                <img src="/logo.png" alt="logo" className='hidden lg:flex '/>
-                <img src="/logo-removebg-preview.png" alt="logo" className='lg:hidden flex '/>
+                <Link to="/" className='lg:hidden flex '> <img src="/logo-removebg-preview.png" alt="logo"  /></Link>
+                <Link to="/" className='hidden lg:flex '> <img src="/logo.png" alt="logo"  /></Link>
                 <div className="flex lg:hidden">
                     <button onClick={toggleMenu}>
                         {isOpen ? <IoMdClose size={30} /> : <AiOutlineMenu size={30} />}

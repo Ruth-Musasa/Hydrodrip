@@ -13,11 +13,11 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
+      <div className="sticky top-0 bg-primary-100 w-full z-50">
+          <NavBar />
+        </div>
       <div>
         <div className="bg-primary-100 clip-mountain">
-          <div className="sticky top-0 bg-primary-100 w-full z-40">
-            <NavBar />
-          </div>
           <div className="relative ">
             <img src="../img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0  md:w-2/12  " alt="" />
             <div className="w-10/12 m-auto space-y-10 py-32  md:py-24 2xl:py-48  relative z-10 ">
@@ -25,7 +25,7 @@ export default function Home() {
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. <span className="hidden md:inline ">Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</span> </p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
             </div>
-            <img src="../img/splash-164963_1920 2.png" className="absolute right-0 top-0 hidden md:block md:w-1/2 " alt="" />
+            <img src="../img/splash-164963_1920 2.png" className="absolute right-0 top-0 md:w-1/2 " alt="" />
           </div>
         </div>
       </div>
