@@ -15,12 +15,12 @@ export default function Home() {
     <div>
       <div>
         <div className="bg-primary-100 clip-mountain">
+          <div className="sticky top-0 bg-primary-100 w-full z-40">
+            <NavBar />
+          </div>
           <div className="relative ">
-            <div className="sticky top-0 bg-primary-100 w-full z-40">
-              <NavBar />
-            </div>
             <img src="../img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0  md:w-2/12  " alt="" />
-            <div className="w-10/12 m-auto space-y-10 py-20  md:py-24 2xl:py-48  relative z-10 ">
+            <div className="w-10/12 m-auto space-y-10 py-32  md:py-24 2xl:py-48  relative z-10 ">
               <h1 className="text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. <span className="hidden md:inline ">Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</span> </p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
         <Divider classe='hidden md:block' />
-        <div className="py-14  lg:py-20 md:w-10/12 m-auto">
+        <div className="py-14  lg:py-20 w-10/12 m-auto">
           <TitleWithUnderline title="Why choose our services" classe="text-center items-center" />
           <p className="w-10/12 md:w-6/12 m-auto text-center mb-8">At HydroDrip, our team of experts offers a wide range of services to our clients. With us, you will benefit from top-tier water management solutions provided by local specialists.</p>
           <div className="grid md:grid-cols-3 lg:gap-40 justify-center lg:space-x-4 m-auto pb-10">
@@ -127,7 +127,7 @@ export default function Home() {
             <img src="../img/Group 33578.png" alt="" />
           </div>
         </div>
-        <div className="w-11/12 m-auto py-14 space-y-10 " >
+        <div className="w-10/12 m-auto py-14 space-y-10 " >
           <TitleWithUnderline title="Join millions of users today" classe="text-center items-center" />
           <h3 className="text-center text-primary-500 font-bold text-3xl">Ready to Take Control of Your Water Usage?</h3>
           <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Dowload Now</Btn>
