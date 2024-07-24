@@ -4,10 +4,10 @@ import SocialMedia from "./socialMedia";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-900 text-white py-14 md:py-40">
-      <div className="w-10/12 m-auto flex flex-col md:flex-row gap-10 md:gap-20 ">
+    <footer className="bg-primary-900 text-white ">
+      <div className="w-10/12 m-auto flex flex-col py-14 md:py-40 md:flex-row gap-10 md:gap-20 ">
         <div className="md:w-2/5 space-y-5">
-          <img src="/logo.png" alt="logo" className="m-auto md:m-0"/>
+          <img src="/logo.png" alt="logo" className="m-auto md:m-0" />
           <p className="text-start">
             Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.
           </p>
@@ -37,6 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="w-10/12 m-auto text-center py-6 border-t border-primary-700 text-primary-700"> &copy; 2024 Hydrodrip. All rights reserved.</p>
     </footer>
   );
 };
