@@ -21,9 +21,9 @@ interface Props {
 
 const Card: React.FC<Props> = ({ imageUrl, sections, title, btnAction, descriptionTitle, description, to, bgColor }) => {
     return (
-        <div className='py-8 md:py-14'>
+        <div className='py-8 md:py-14 w-11/12 md:w-10/12 m-auto'>
             <TitleWithUnderline title={`${title} `} classe="items-center" />
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 w-11/12 lg:w-10/12 m-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 ">
                 <div className="md:flex gap-20 w-full ">
                     <div className={`${bgColor} mb-4 w-auto h-64 w-auto lg:w-1/2 lg:h-auto relative xl:h-[506px] img-div m-auto `} >
                         <div className='w-auto h-full img-div bg-no-repeat' style={{

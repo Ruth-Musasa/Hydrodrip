@@ -9,7 +9,7 @@ import ProjectsCard from "./projectsCard";
 export default function Projects() {
     return (
         <div>
-            <div className="sticky w-full bg-white top-0 z-10">
+            <div className="sticky w-full bg-white top-0 z-40">
                 <NavBar />
             </div>
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">

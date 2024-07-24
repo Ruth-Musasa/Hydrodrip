@@ -10,19 +10,19 @@ import { MdPlace } from "react-icons/md";
 export default function ContactUs() {
     return (
         <section>
+            <div className="sticky w-full bg-white top-0 z-10">
+                <NavBar />
+            </div>
             <div>
-                <div className="sticky w-full bg-white top-0 z-10">
-                    <NavBar />
-                </div>
                 <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                     <h1 className="text-5xl font-bold m-auto ">Contact Us</h1>
                     <p className="font-semibold md:w-1/3 m-auto text-lg ">Advanced solutions for efficient water management</p>
                 </div>
             </div>
             <div className="pt-10 md:py-20 md:mb-10">
-                <TitleWithUnderline title="Write a message to Hydrodrip" classe="items-center" />
+                <TitleWithUnderline title="Write a message to Hydrodrip" classe="w-10/12 items-center" />
                 <Form />
-                <Divider />
+                <Divider classe="hidden md:block"/>
             </div>
             <CardPhoto img="../img/Rectangle 589.png">
                 <TitleWithUnderline title="Our contact details" classe="items-start" />
@@ -31,21 +31,21 @@ export default function ContactUs() {
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Address</h3>
                         <div className='flex gap-2'>
                             <MdPlace className="text-primary-400" size={30} />
-                            <span className='text-primary-900 font-bold '>1010 Avenue Jouhanesbourg, RSA.</span>
+                            <span className='text-primary-900 font-semibold '>1010 Avenue Jouhanesbourg, RSA.</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>
                         <div className='flex gap-2'>
                             <FaMailBulk className="text-primary-400" size={20} />
-                            <span className='text-primary-900 font-bold '>connect@hydrodrip.com</span>
+                            <span className='text-primary-900 font-semibold '>connect@hydrodrip.com</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Number</h3>
                         <div className='flex gap-2'>
                             <FaPhone className='text-primary-400' size={20} />
-                            <span className='text-primary-900 font-bold '>+1234567890</span>
+                            <span className='text-primary-900 font-semibold '>+1234567890</span>
                         </div>
                     </div>
                 </div>

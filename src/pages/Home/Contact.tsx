@@ -48,14 +48,14 @@ const Contact: React.FC<Props> = ({ bgColor,
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>
                         <div className='flex gap-2'>
                             <FaMailBulk className="text-primary-400" size={20} />
-                            <span className='text-primary-900 font-bold '>connect@hydrodrip.com</span>
+                            <span className='text-primary-900 font-semibold '>connect@hydrodrip.com</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Number</h3>
                         <div className='flex gap-2'>
                             <FaPhone className='text-primary-400' size={20} />
-                            <span className='text-primary-900 font-bold '>+1234567890</span>
+                            <span className='text-primary-900 font-semibold '>+1234567890</span>
                         </div>
                     </div>
                     <div>

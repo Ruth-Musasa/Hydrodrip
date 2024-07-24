@@ -10,7 +10,7 @@ export default function FAQs() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}>
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center w-10/12 m-auto">
                 <TitleWithUnderline title="Some frequently asked questions asked" classe="items-center lg:w-4/12  m-auto text-center text-white " />
                 <Link to="/faqs">  <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Consult FAQs</Btn></Link>
             </div>
