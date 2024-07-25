@@ -13,7 +13,7 @@ export default function Projects() {
                 <NavBar />
             </div>
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
-                <h1 className="text-5xl font-bold m-auto ">Our Impactful Projects</h1>
+                <h1 className="w-11/12 m-auto text-5xl font-bold m-auto ">Our Impactful Projects</h1>
                 <p className="font-semibold m-auto text-lg ">Driving sustainable water management through innovative projects</p>
             </div>
             <section className="bg-white py-16">

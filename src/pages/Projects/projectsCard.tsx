@@ -6,6 +6,7 @@ import TitleWithUnderline from '../../components/titleWithUnderline';
 interface Props {
     imageUrl: string;
     title: string;
+    date?: string;
     btnAction: string;
     sections: {
         title: string;
@@ -13,7 +14,7 @@ interface Props {
     }[];
 }
 
-const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction }) => {
+const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction, date }) => {
     return (
         <div className='md:py-14'>
             <div className='w-10/12 m-auto '>

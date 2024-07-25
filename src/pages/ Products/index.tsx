@@ -10,7 +10,7 @@ export default function Product() {
                 <NavBar />
             </div>
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
-                <h1 className="text-5xl font-bold m-auto ">Our Innovative Products</h1>
+                <h1 className="w-11/12 m-auto text-5xl font-bold m-auto ">Our Innovative Products</h1>
                 <p className="w-10/12 font-semibold md:w-1/3 m-auto text-lg ">Discover cutting-edge solutions designed to revolutionize water management and conservation.</p>
             </div>
             <section className="bg-white ">

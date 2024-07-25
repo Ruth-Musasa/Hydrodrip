@@ -16,7 +16,7 @@ const ProjectDetails: React.FC = () => {
             <NavBar />
             <div className="text-white text-center  bg-custom-gradient py-40 2xl:py-60 m-auto space-y-6 clip-mountain">
                 <h1 className="text-5xl font-bold m-auto ">{project.title}</h1>
-                <p className="font-semibold m-auto text-lg ">Date?</p>
+                <p className="font-semibold m-auto text-lg ">{project.date}</p>
             </div>
             <div className=" w-11/12 md:w-9/12 m-auto lg:gap-20 2xl:gap-40 pb-20 pt-10 lg:py-20">
                 <div className='w-auto h-[500px] 2xl:h-[710px] m-auto rounded-xl' style={{
