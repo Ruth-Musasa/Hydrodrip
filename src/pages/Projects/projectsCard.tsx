@@ -14,7 +14,7 @@ interface Props {
     }[];
 }
 
-const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction, date }) => {
+const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction}) => {
     return (
         <div className='md:py-14'>
             <div className='w-10/12 m-auto '>
