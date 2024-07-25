@@ -18,7 +18,7 @@ const Btn: React.FC<BtnProps> = ({ Size, Style, Color, State, children, icon, cl
         setIsActive(!isActive);
     };
 
-    const baseStyles = 'flex items-center justify-center rounded transition duration-300 font-bold';
+    const baseStyles = 'flex items-center justify-center rounded transition duration-300 font-bold shadow-md shadow-primary-900/50';
 
     const sizeStyles = {
         small: 'px-2 py-1 text-sm',

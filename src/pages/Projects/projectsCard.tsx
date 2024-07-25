@@ -21,7 +21,7 @@ const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction })
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 md:w-10/12 md:m-auto">
                 <div className="w-full md:w-5/12">
-                    <div className='w-full h-80 md:w-auto 2xl:h-[500px] 2xl:w-auto img-div m-auto' style={{
+                    <div className='w-full h-80 md:w-auto xl:h-[400px] 2xl:h-[400px] 2xl:w-auto img-div m-auto' style={{
                         backgroundImage: `url("${imageUrl}")`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',

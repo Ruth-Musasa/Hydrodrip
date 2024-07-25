@@ -19,13 +19,13 @@ export default function Home() {
       <div>
         <div className="bg-primary-100 clip-mountain overflow-hidden">
           <div className="relative ">
-            <img src="../img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12 opacity-50 md:opacity-100" alt="" />
-            <div className="w-10/12 m-auto space-y-10 py-32  md:py-24 2xl:py-48  relative z-10 ">
-              <h1 className="text-4xl 2xl:text-5xl text-primary-900 font-bold lg:w-7/12 2xl:w-6/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
+            <img src="../img/splash-164963_1920-removebg-preview 4.png" className="absolute left-0 md:w-2/12 opacity-25 lg:opacity-100" alt="" />
+            <div className="w-11/12 md:w-10/12 m-auto space-y-10 py-24 2xl:py-48  relative z-10 ">
+              <h1 className="text-5xl 2xl:text-6xl text-primary-900 font-bold lg:font-black lg:w-8/12 2xl:w-8/12 lg:leading-normal ">Redefining Water Conservation with HydroWallet</h1>
               <p className="w-full lg:w-6/12 pb-10">HydroWallet isn't just a tool; it’s a transformative force in water management. <span className="hidden md:inline ">Our innovative platform enables water suppliers to distribute water more efficiently and sustainably, ushering in a new era of responsible water use and stewardship.</span> </p>
               <Link to="/about-us"><Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true}>Read more</Btn></Link>
             </div>
-            <img src="../img/splash-164963_1920 2.png" className="absolute right-0 top-0 opacity-50 md:opacity-100 md:w-1/2" alt="" />
+            <img src="../img/splash-164963_1920 2.png" className="absolute right-0 top-0 opacity-25 lg:opacity-100 md:w-1/2" alt="" />
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </div>
           <div className="m-auto pt-10 space-y-10 w-full md:pt-0 md:w-1/2">
-            <TitleWithUnderline title="Who are you" classe="items-center md:items-start" />
+            <TitleWithUnderline title="Who are we?" classe="items-center md:items-start" />
             <p className="text-justify md:text-start">At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
             <p className="border-l-4 border-primary-500 pl-4 font-bold text-justify  md:text-start">Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.</p>
             <div className="flex gap-6 pb-10">
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-primary-300 py-14">
-          <div className="grid md:grid-cols-2 w-10/12 m-auto lg:gap-20">
+          <div className="grid gap-4 md:grid-cols-2 w-10/12 m-auto lg:gap-20">
             <div className="m-auto md:w-3/4">
               <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white text-center lg:leading-normal ">Trust our quality technicians buy now a Smart Water Meters            </h2>
               <Link to="/contact-us" > <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
