@@ -3,9 +3,9 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const center = {
-    lat: -11.6869,
-    lng: 27.4857,
-};
+    lat: -26.2041,
+    lng: 28.0473,
+  };
 
 function Map() {
     return (
@@ -19,7 +19,7 @@ function Map() {
             />
             <Marker position={center}>
                 <Popup>
-                    Avenue Fatuma, Lubumbashi <br /> (9F52+WRQ)
+                   1010 Avenue  <br /> Jouhanesbourg, RSA.
                 </Popup>
             </Marker>
         </MapContainer>

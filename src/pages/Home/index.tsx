@@ -30,14 +30,14 @@ export default function Home() {
         </div>
       </div>
       <section>
-        <div className="w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-14 md:py-20">
-          <div className="relative w-full md:w-1/2">
-            <div className="mb-0 bg-primary-900 rounded-full w-60 h-60 md:w-96 md:h-96 m-auto md:m-0">
-              <img src="../img/Triangle.png" alt="" className="absolute -bottom-2 left-0 w-1/4 md:w-1/4 md:-bottom-0 2xl:w-1/6" />
-              <img src="../img/openart-image_H1J3jG7x_1718278217971_raw-removebg-preview 1.png" className="absolute -right-6 -bottom-10 md:-right-20 md:bottom-0 2xl:-right-0 2xl:-bottom-28" alt="" />
+        <div className="w-10/12 m-auto flex flex-col md:flex-row lg:gap-20 py-14 lg:py-20">
+          <div className="relative w-full m-auto lg:m-0 lg:w-1/2">
+            <div className="mb-0 bg-primary-900 rounded-full w-60 h-60 lg:w-96 lg:h-96 m-auto lg:m-0">
+              <img src="../img/Triangle.png" alt="" className="absolute -bottom-2 left-0 w-1/4 lg:-bottom-0 2xl:w-1/6" />
+              <img src="../img/openart-image_H1J3jG7x_1718278217971_raw-removebg-preview 1.png" className="absolute -right-6 -bottom-10 lg:-right-20 lg:bottom-0 2xl:-right-0 2xl:-bottom-28" alt="" />
             </div>
           </div>
-          <div className="m-auto pt-10 space-y-10 w-full md:pt-0 md:w-1/2">
+          <div className="m-auto pt-10 space-y-10 w-full md:pt-0 lg:w-1/2">
             <TitleWithUnderline title="Who are we?" classe="items-center md:items-start" />
             <p className="text-justify md:text-start">At HydroDrip, we’re not just innovators; we’re catalysts for change in water management. Driven by a commitment to sustainable practices, our groundbreaking HydroWallet system offers smart solutions that conserve water and ensure its equitable distribution, empowering both urban and rural communities.</p>
             <p className="border-l-4 border-primary-500 pl-4 font-bold text-justify  md:text-start">Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.</p>
@@ -93,9 +93,9 @@ export default function Home() {
           <Link to="/products"> <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Learn more</Btn></Link>
         </div>
         <div className="py-14 bg-primary-100">
-          <div className="w-10/12 m-auto flex flex-col md:flex-row gap-8 lg:gap-20">
-            <img src="../img/Images.png" className="w-full md:w-1/2" alt="" />
-            <div className="m-auto space-y-10 w-full md:w-1/2">
+          <div className="w-10/12 m-auto flex flex-col lg:flex-row gap-8 lg:gap-20">
+            <img src="../img/Images.png" className="w-full lg:w-1/2" alt="" />
+            <div className="m-auto space-y-10 w-full lg:w-1/2">
               <TitleWithUnderline title="Water credit" classe="items-start" />
               <p>At HydroDrip, we are pioneers in the field of water management, dedicated to delivering innovative solutions that ensure efficient water use and conservation. Our mission is to empower communities and industries with advanced technologies that promote sustainable water practices and secure water resources for future generations</p>
               <ParagraphDescription

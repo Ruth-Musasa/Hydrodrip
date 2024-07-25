@@ -5,7 +5,7 @@ import SocialMedia from "./socialMedia";
 const Footer = () => {
   return (
     <footer className="bg-primary-900 text-white ">
-      <div className="w-10/12 m-auto flex flex-col py-14 md:py-40 md:flex-row gap-10 md:gap-20 ">
+      <div className="w-10/12 m-auto flex flex-col py-14 md:py-24 2xl:py-40 md:flex-row gap-10 md:gap-20 ">
         <div className="md:w-2/5 space-y-5">
           <img src="/logo.png" alt="logo" className="m-auto md:m-0" />
           <p className="text-start">

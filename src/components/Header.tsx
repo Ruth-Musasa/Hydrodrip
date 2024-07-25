@@ -8,12 +8,12 @@ export default function Header() {
                 <div className="flex flex-row gap-4 lg:gap-14 text-white font-bold ">
                     <div className='hidden md:flex gap-2 py-4 items-center'>
                         <FaPhoneAlt className='text-primary-400' size={20} />
-                        <a href="tel:+1234567890  items-center">+1234567890</a>
+                        <a href="tel:+1234567890" className="  items-center">+1234567890</a>
                     </div>
                     <div className='hidden md:block border-l '></div>
                     <div className=' hidden md:flex gap-2 py-4  m-auto'>
                         <FaMailBulk className="text-primary-400" size={20} />
-                        <a href="mailto:connect@hydrodrip.com  items-center">connect@hydrodrip.com</a>
+                        <a href="mailto:connect@hydrodrip.com " className=" items-center">connect@hydrodrip.com</a>
                     </div>
                 </div>
                 <SocialMedia />

@@ -1,4 +1,4 @@
-import { FaMailBulk, FaPhone } from "react-icons/fa";
+import { FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 import NavBar from "../../components/NavBar";
 import TitleWithUnderline from "../../components/titleWithUnderline";
 import CardPhoto from "../AboutUs.tsx/cardPhoto";
@@ -19,38 +19,38 @@ export default function ContactUs() {
                     <p className="font-semibold md:w-1/3 m-auto text-lg ">Advanced solutions for efficient water management</p>
                 </div>
             </div>
-            <div className="pt-10 md:py-20 md:mb-10">
+            <div className="pt-10 lg:py-20 lg:mb-10">
                 <TitleWithUnderline title="Write a message to Hydrodrip" classe="w-10/12 items-center" />
                 <Form />
-                <Divider classe="hidden md:block"/>
+                <Divider classe="hidden lg:block" />
             </div>
             <CardPhoto img="../img/Rectangle 589.png">
-                <TitleWithUnderline title="Our contact details" classe="items-start" />
-                <div className="md:w-2/3 space-y-6">
-                    <div>
+                <TitleWithUnderline title="Our contact details" classe="items-center lg:items-start" />
+                <div className="md:w-2/3 space-y-6 ">
+                    <div >
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Address</h3>
                         <div className='flex gap-2'>
                             <MdPlace className="text-primary-400" size={30} />
-                            <span className='text-primary-900 font-semibold '>1010 Avenue Jouhanesbourg, RSA.</span>
+                            <a href="#map" className='text-primary-900 font-semibold '> 1010 Avenue Jouhanesbourg, RSA.</a>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Email</h3>
                         <div className='flex gap-2'>
                             <FaMailBulk className="text-primary-400" size={20} />
-                            <span className='text-primary-900 font-semibold '>connect@hydrodrip.com</span>
+                            <a href="mailto:connect@hydrodrip.com " className="text-primary-900 font-semibold items-center">connect@hydrodrip.com</a>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mb-2 text-primary-900">Number</h3>
                         <div className='flex gap-2'>
-                            <FaPhone className='text-primary-400' size={20} />
-                            <span className='text-primary-900 font-semibold '>+1234567890</span>
+                            <FaPhoneAlt className='text-primary-400' size={20} />
+                            <a href="tel:+1234567890" className="text-primary-900 font-semibold items-center">+1234567890</a>
                         </div>
                     </div>
                 </div>
             </CardPhoto>
-            <div>
+            <div id="map">
                 <MapSection />
             </div>
         </section>
