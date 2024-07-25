@@ -16,10 +16,11 @@
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: dash 10s forwards;
-}
-
-@keyframes dash {
+  }
+  
+  @keyframes dash {
     to {
-        stroke-dashoffset: 0;
+      stroke-dashoffset: 0;
     }
-}
+  }
+  
