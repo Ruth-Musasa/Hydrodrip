@@ -16,11 +16,11 @@ const ParagraphDescription: React.FC<Props> = ({ sections}) => {
             {
                 sections.map((section, index) => (
                     <div key={index}>
-                        <div className="pb-4 flex items-center gap-8">
-                            {section.icon ? <FaArrowRight className="inline mr-2 text-primary-300" /> : null}
+                        <div className="pb-8 flex items-center gap-8">
+                            {section.icon ? <FaArrowRight className="inline mr-2 text-primary-300 items-center" /> : null}
                             {section.img ? <img src={section.img} alt="image icon" className='w-12 md:w-16 items-center' /> : null}
                             {section.paragraphs.map((paragraph, pIndex) => (
-                                <p key={pIndex} className="text-gray-700 mb-4">
+                                <p key={pIndex} className="text-gray-700 ">
                                     <h2 className="font-bold ">{section.title}</h2>
                                     {paragraph}
                                 </p>
