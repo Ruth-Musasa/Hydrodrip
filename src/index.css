@@ -10,4 +10,16 @@
 
 .img-div {
     border-radius: 0px 300px 100px 100px;
-  }
+}
+
+.underline-animation path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
