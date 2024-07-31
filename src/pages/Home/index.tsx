@@ -11,9 +11,10 @@ import ParagraphDescription from "../../components/paragraphDescription";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+
   return (
     <div>
-      <div className="sticky top-0 bg-primary-100 w-full z-50">
+      <div className="sticky top-0 w-full z-50 bg-primary-100">
         <NavBar />
       </div>
       <div>
@@ -121,7 +122,7 @@ export default function Home() {
         <div className="bg-primary-300 py-14">
           <div className="grid gap-4 md:grid-cols-2 w-10/12 m-auto lg:gap-20">
             <div className="m-auto md:w-3/4">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white text-center lg:leading-normal ">Trust our quality technicians buy now a Smart Water Meters            </h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white text-center lg:leading-normal ">Trust our quality technicians buy now a Smart Water Meters</h2>
               <Link to="/contact-us" > <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={false} classe="m-auto">Contact us</Btn></Link>
             </div>
             <img src="../img/Group 33578.png" alt="" />
@@ -138,5 +139,5 @@ export default function Home() {
         <FAQs />
       </section>
     </div>
-  )
+  );
 }
