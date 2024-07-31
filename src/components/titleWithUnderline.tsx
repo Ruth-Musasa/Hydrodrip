@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 
 interface TitleWithCurveUnderlineProps {
@@ -11,9 +12,16 @@ const TitleWithUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title, cla
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (titleRef.current) {
-      setWidth(titleRef.current.offsetWidth);
-    }
+    const updateWidth = () => {
+      if (titleRef.current) {
+        const newWidth = window.innerWidth < 768 ? 160 : titleRef.current.offsetWidth;
+        setWidth(newWidth);
+      }
+    };
+
+    updateWidth();
+
+    window.addEventListener('resize', updateWidth); 
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,6 +43,7 @@ const TitleWithUnderline: React.FC<TitleWithCurveUnderlineProps> = ({ title, cla
       if (titleRef.current) {
         observer.unobserve(titleRef.current);
       }
+      window.removeEventListener('resize', updateWidth); 
     };
   }, [title]);
 

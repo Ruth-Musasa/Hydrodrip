@@ -5,7 +5,7 @@ import TitleWithCurveUnderline from '../../components/titleWithUnderline';
 const UserTestimonials: React.FC = () => {
   return (
     <section className="py-14 md:py-32 w-11/12 md:w-10/12 m-auto space-y-10 md:space-y-20 ">
-      <TitleWithCurveUnderline title="Hear From Our Satisfied Users" classe="text-center md:items-center"/>
+      <TitleWithCurveUnderline title="Hear From Our Satisfied Users" classe="text-center items-center"/>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Testimonial
           imageUrl="../img/photo1.png"

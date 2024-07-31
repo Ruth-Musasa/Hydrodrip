@@ -21,7 +21,7 @@ export default function WaterCredit() {
                 <div className="bg-custom-gradient m-auto space-y-6 clip-mountain">
                     <div className="w-11/12 lg:w-10/12 md:flex m-auto py-10 2xl:py-20 lg:gap-20">
                         <div className="text-white md:w-1/2 m-auto space-y-10">
-                            <h1 className="text-5xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
+                            <h1 className="text-4xl font-bold m-auto ">Empower Your Water Usage with <span className="text-secondary-300"> Water Credits</span> </h1>
                             <p className="font-semibold m-auto text-lg ">Drive sustainability while achieving economic benefits.</p>
                         </div>
                         <img src="../img/2-removebg 3.png" alt="" />

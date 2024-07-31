@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-primary-900 text-white ">
       <div className="w-10/12 m-auto flex flex-col py-14 md:py-24 2xl:py-40 md:flex-row gap-10 md:gap-20 ">
         <div className="md:w-2/5 space-y-5">
-          <img src="/hydrodrip logo.svg" alt="logo" className="h-40 w-auto m-auto md:m-0" />
+          <img src="/hydrodrip logo.svg" alt="logo" className="h-28 w-auto m-auto md:m-0" />
           <p className="text-start">
             Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.
           </p>

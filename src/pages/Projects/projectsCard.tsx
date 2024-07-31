@@ -18,7 +18,7 @@ const ProjectsCard: React.FC<Props> = ({ sections, imageUrl, title, btnAction}) 
     return (
         <div className='md:py-14'>
             <div className='w-10/12 m-auto '>
-                <TitleWithUnderline title={`${title} `} classe="items-center" />
+                <TitleWithUnderline title={`${title} `} classe="text-center items-center" />
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8 md:w-10/12 md:m-auto">
                 <div className="w-full md:w-5/12">
