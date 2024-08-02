@@ -101,7 +101,7 @@ const Contact: React.FC<Props> = ({ bgColor,
                             ></textarea>
                             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                         </label>
-                        <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto">Send</Btn>
+                        <Btn Size="large" Style="Filled" Color="primary" State="Default" icon={true} classe="m-auto w-full lg:w-auto">Send</Btn>
                     </form>
                     {submitted && <p className="text-green-500 mt-4">Merci pour votre message !</p>}
                 </div>
