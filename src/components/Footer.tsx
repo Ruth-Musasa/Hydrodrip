@@ -7,14 +7,19 @@ const Footer = () => {
     <footer className="bg-primary-900 text-white ">
       <div className="w-10/12 m-auto flex flex-col py-14 md:py-24 2xl:py-40 md:flex-row gap-10 md:gap-20 ">
         <div className="md:w-2/5 space-y-5">
-          <img src="/logo white.webp" alt="logo" className="h-48 w-auto my-[-40px] mx-auto md:mx-0" />
-          <p className="text-start">
+          <Link to="/" className='md:hidden flex'>
+            <img src="/logo mobile.webp" alt="logo" className=" h-auto w-11/12 my-[-115px] " />
+          </Link>
+          <Link to="/" className='hidden md:flex'>
+            <img src="/logo white.webp" alt="logo" className="h-48 w-auto my-[-40px] mx-auto md:mx-0" />
+          </Link>
+          <p className="text-start ">
             Our mission is to champion sustainable water management solutions that safeguard water security for today’s communities and future generations.
           </p>
           <SocialMedia />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 md:w-3/5">
-          <div className="flex flex-col gap-5  ">
+          <div className="grid grid-cols-1 gap-5  ">
             <h3 className="text-primary-500 font-bold">Navigation</h3>
             <Link to="/" className="text-white hover:text-primary-500">Home</Link>
             <Link to="/products" className="text-white hover:text-primary-500">Produits</Link>

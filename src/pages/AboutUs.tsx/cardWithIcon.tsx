@@ -15,7 +15,7 @@ const CardWithIcon: React.FC<Props> = ({ img, children }) => {
                             {children}
                         </div>
                     </div>
-                    <img src={img} className="lg:w-5/12 md:h-full md:m-auto 2xl:w-2/3" alt="" />
+                    <img src={img} className="md:w-2/3 lg:w-5/12 md:h-full md:m-auto 2xl:w-2/3" alt="" />
                 </div>
             </div>
         </div>
