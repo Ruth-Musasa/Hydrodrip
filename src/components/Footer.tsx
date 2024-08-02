@@ -22,7 +22,7 @@ const Footer = () => {
             <Link to="/water-credit" className="text-white hover:text-primary-500">Water Credit</Link>
             <Link to="/about-us" className="text-white hover:text-primary-500">About Us</Link>
           </div>
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col gap-5">
             <h3 className="text-primary-500 font-bold">Featured Locations</h3>
             <span className="text-white hover:text-primary-500">Kandy</span >
             <span className="text-white hover:text-primary-500">Anuradhapura</span >

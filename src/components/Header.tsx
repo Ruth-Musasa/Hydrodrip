@@ -3,7 +3,7 @@ import SocialMedia from "./socialMedia";
 
 export default function Header() {
     return (
-        <div className='bg-gray-900'>
+        <div className='hidden md:flex bg-gray-900'>
             <div className="flex justify-center py-4 md:py-0 md:justify-between items-center w-10/12  m-auto">
                 <div className="flex flex-row gap-4 lg:gap-14 text-white font-bold ">
                     <div className='hidden md:flex gap-2 py-4 items-center'>
