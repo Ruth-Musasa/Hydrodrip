@@ -57,11 +57,18 @@ export default function NavBar() {
         <div className={`relative z-10 ${isScrolled ? 'bg-gray-900 text-white' : ''}`}>
             <header className="flex justify-between items-center w-10/12 m-auto">
                 <Link to="/" className='lg:hidden flex'>
-                    <img src="/hydrodrip logo mobile.svg" alt="logo" className='h-20 w-auto' />
+                    <img src="/logo mobile.webp" alt="logo" className='h-28 w-auto mb-[-20px] ml-[-6px]  ' />
                 </Link>
-                <Link to="/" className='hidden lg:flex'>
-                    <img src="/hydrodrip logo.svg" alt="logo" className='h-16 w-auto my-2' />
-                </Link>
+                {isScrolled ?
+                    <Link to="/" className='hidden lg:flex'>
+                        <img src="/logo white.webp" alt="logo" className='h-20 w-auto ' />
+                    </Link> 
+                    :
+                    <Link to="/" className='hidden lg:flex'>
+                        <img src="/hydrodrip logo.svg" alt="logo" className='h-16 w-auto my-2' />
+                    </Link>
+                }
+
                 <div className="flex lg:hidden">
                     <button onClick={toggleMenu} className={`menu-button ${isOpen ? 'open' : ''}`}>
                         {isOpen ? <IoMdClose size={30} /> : <AiOutlineMenu size={30} />}
