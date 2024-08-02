@@ -3,24 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: "Open Sans", sans-serif;
-    }
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
 }
 
 .img-div {
-    border-radius: 0px 300px 100px 100px;
+  border-radius: 0px 300px 100px 100px;
+}
+
+.menu-button {
+  transition: transform 0.3s ease;
+}
+
+.menu-button.open {
+  transform: rotate(90deg);
 }
 
 .underline-animation path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 10s forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
   }
-  
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  
+}
