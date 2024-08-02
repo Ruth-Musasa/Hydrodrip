@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import Btn from './Button';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
-import SocialMedia from './socialMedia';
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
